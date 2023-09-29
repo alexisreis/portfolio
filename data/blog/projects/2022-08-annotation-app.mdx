@@ -1,0 +1,51 @@
+---
+title: annotation-app, a web-app to annotate image with sensorial infos
+date: '2022-08-12'
+tags: ['Internship', 'Web app']
+draft: false
+images: ['/static/images/projects/annotation-app.jpg']
+summary: 'Internship at Liris. The goal was to develop a web tool to
+annotate images with sensorial informations in order to capture sensorial
+data on 18th century documents.'
+---
+
+This project was part of my 2 months internship at Liris during summer 2022.
+My mission was to develop a web app to allow users
+to annotate scanned documents with sensorial data.
+The documents were from the city of Lyon (France) in the 18th century.
+
+The app, called annotation-app, allow users to :
+1. visualize scanned documents in a web browser
+2. annotate scanned pages with sensorial data and transcribe the text
+3. save their work and share it with all the users
+4. display sensorial statistics about the documents
+
+The app was developed with Node and React for the front-end and Python and Flask for the back-end.
+
+**The code is available on [Github](https://github.com/alexisreis/annotation-app).**
+
+## Screenshots
+
+Here is the document view :
+
+<Image
+	alt={`annotation-app`}
+	src={`/static/images/projects/annotation-app.jpg`}
+	width={995}
+	height={527}
+	priority
+/>
+
+We can see all the pages this document is composed of and for each page,
+sensorial statistics can be displayed. This stats are computed from the annotations
+made by the users on each page.
+
+There is also stats about the document as a whole. For example, we can see the
+most used sensorial words in the document and the most found senses.
+
+This development and research was part of the SYSTESENS project at Liris.
+
+Used technologies :
+* Front : Node, React
+* Back : Python, Flask
+* Github

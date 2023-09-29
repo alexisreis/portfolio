@@ -1,0 +1,88 @@
+{
+  "home" : {
+	"status" : "Étudiant ingénieur informatique (5A)",
+	"looking_for": "\uD83D\uDD0E Je recherche",
+	"looking_for_what": "un stage de 6 mois !",
+	"contact_me": "Me contacter !",
+	"presentation" : {
+	  "hi": "Salut! \uD83D\uDC4B",
+	  "p1": "Je suis en dernière année d'école d'ingénieur informatique à l'",
+	  "p2": "je recherche actuellement un stage de fin d'études (6 mois) dans le développement logiciel."
+	},
+	"tiles": {
+	  "currently": {
+		"p1": "Dernière année ",
+		"p2": "(5ème)",
+		"p3": "d'école d'ingénieur",
+		"p4": "informatique"
+	  },
+	  "passionate": {
+		"title": "Passionné",
+		"p1": "par les nouvelles technologies"
+	  },
+	  "sport":  {
+		"title": "Sportif",
+		"p1": "handball, course à pied, vélo"
+	  },
+	  "cinema": {
+		"title": "Cinéphile",
+		"p1": "Section Cinéma études",
+		"p2": "Membre du CA de CLM"
+	  }
+	},
+	"me" : {
+	  "description1": "J'ai 22 ans et je suis passionné par les nouvelles technologies.",
+	  "description2": "Je donne des ",
+	  "lessons": "cours particuliers de maths / physique / informatique et anglais",
+	  "description3": "à des étudiants de lycée et de premier cycle.",
+	  "description4": "J'étais",
+	  "description5": "secrétaire général de",
+	  "aedi": "l'AEDI",
+	  "description6": "(l'association des étudiants du département d'informatique).",
+	  "description7": "Je suis aussi en ",
+	  "cinemaClass": "section cinéma études",
+	  "description8": "à l'INSA et ",
+	  "description9": "membre du conseil d'administration de",
+	  "cineLaMouette": "Ciné – La Mouette",
+	  "description10": "",
+	  "description11": ", la société audiovisuelle de l'INSA."
+	},
+	"download_resume": "Télécharger mon CV",
+	"see_all_projects": "Voir tous mes projets ici.",
+  	"experiences": {
+		"worldline": {
+		  "date1": "MAI",
+		  "date2": "AOUT 2023",
+		  "description": "Stage de 3 mois. Développement fullstack."
+		},
+	  	"liris": {
+		  "date1": "JUIN",
+		  "date2": "AOUT 2022",
+		  "description": "Stage de 2 mois. Développement fullstack."
+		}
+	},
+	"education" : {
+		"trinity": "ERASMUS à l'Université de Trinity College à Dublin (dernier semestre)",
+	  	"insa": "Étudiant à l'INSA de Lyon au département informatique, dernière année.",
+		"lycee": "Baccalauréat scientifique, spécialité mathématiques, option Sciences de l'ingénieur, mention très bien."
+	},
+	"organizations": {
+		"AEDI": "Secrétaire général de l'AEDI (Association des Étudiants en Département Informatique)",
+	  	"CLM" : "Membre du conseil d'administration de Ciné – La Mouette (association audiovisuelle de l'INSA)",
+	  	"KLS": "Membre actif de l'association KLS, DJ et production de musique électronique",
+	  	"TODAY": "AUJOURD'HUI"
+	}
+  },
+
+  "projects" : {
+	"title": "Projets",
+	"subtitle": "Quelques projets sur lesquels j'ai travaillé dernièrement.",
+	"search": "Rechercher un projet",
+	"noResults": "Aucun projet trouvé."
+  },
+  "nav_links" : {
+	"home": "accueil",
+	"projects": "projets",
+	"about": "moi"
+  }
+}

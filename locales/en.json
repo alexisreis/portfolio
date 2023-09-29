@@ -1,0 +1,87 @@
+{
+  "home": {
+	"status": "Computer Science student (final year)",
+	"looking_for": "\uD83D\uDD0E Looking for a",
+	"looking_for_what": "6 months internship !",
+	"contact_me": "Contact me!",
+	"presentation": {
+	  "hi": "Hi! \uD83D\uDC4B",
+	  "p1": "I'm in my final year in Computer Science at ",
+	  "p2": "I am currently looking for a 6 months internship in the field of software engineering."
+	},
+	"tiles": {
+	  "currently": {
+		"p1": "Final year ",
+		"p2": "(5th)",
+		"p3": "in",
+		"p4": "Computer Science"
+	  },
+	  "passionate": {
+		"title": "Fond of",
+		"p1": "new technologies"
+	  },
+	  "sport": {
+		"title": "Sporty",
+		"p1": "handball, running, cycling"
+	  },
+	  "cinema": {
+		"title": "Cinema",
+		"p1": "Cinema class student",
+		"p2": "Member of CLM board"
+	  }
+	},
+	"me": {
+	  "description1": "I'm 22, and I'm fond of new technologies.",
+	  "description2": "I give ",
+	  "lessons": "maths / physics / computer and english private lessons",
+	  "description3": "to undergraduate and high school students.",
+	  "description4": "I was",
+	  "description5": "secretary-general of the",
+	  "aedi": "AEDI",
+	  "description6": "(the computer science department student association).",
+	  "description7": "I am also in ",
+	  "cinemaClass": "Cinema class",
+	  "description8": "at INSA and a",
+	  "description9": "member of",
+	  "cineLaMouette": "Ciné – La Mouette",
+	  "description10": "’s board",
+	  "description11": ", the INSA audiovisual society."
+	},
+	"download_resume": "Download my resume",
+	"see_all_projects": "See all my projects here.",
+	"experiences": {
+	  "worldline": {
+		"date1": "MAY",
+		"date2": "AUG 2023",
+		"description": "3 months internship."
+	  },
+	  "liris": {
+		"date1": "JUN",
+		"date2": "AUG 2022",
+		"description": "2 months internship."
+	  }
+	},
+	"education" : {
+	  "trinity": "ERASMUS student at the Computer Science department, final semester.",
+	  "insa": "Student in Computer Science engineering school, final year.",
+	  "lycee": "Scientific Baccalaureate, with honors."
+	},
+	"organizations": {
+	  "AEDI": "Student association of the Computer Science department at INSA Lyon (AEDI). Active member then secretary for a year.",
+	  "CLM" : "Audiovisual and cinema society, member of the board.",
+	  "KLS": "DJ and music production society. Active member.",
+	  "TODAY": "TODAY"
+	}
+  },
+  "projects": {
+	"title": "Projects",
+	"subtitle": "Some projects I worked on lately.",
+	"search": "Search projects",
+	"noResults": "No projects found."
+  },
+  "nav_links": {
+	"home": "home",
+	"projects": "projects",
+	"about": "about"
+  }
+}
