@@ -48,8 +48,10 @@
 	  "description11": ", la société audiovisuelle de l'INSA."
 	},
 	"download_resume": "Télécharger mon CV",
+	"download_resume_link": "/static/Alexis_Reis_CV_FR.pdf",
 	"see_all_projects": "Voir tous mes projets ici.",
   	"experiences": {
+	  	"internships": "Stages",
 		"worldline": {
 		  "date1": "MAI",
 		  "date2": "AOUT 2023",
@@ -62,11 +64,13 @@
 		}
 	},
 	"education" : {
+	    "title": "Éducation",
 		"trinity": "ERASMUS à l'Université de Trinity College à Dublin (dernier semestre)",
 	  	"insa": "Étudiant à l'INSA de Lyon au département informatique, dernière année.",
 		"lycee": "Baccalauréat scientifique, spécialité mathématiques, option Sciences de l'ingénieur, mention très bien."
 	},
 	"organizations": {
+	  	"title": "Associations",
 		"AEDI": "Secrétaire général de l'AEDI (Association des Étudiants en Département Informatique)",
 	  	"CLM" : "Membre du conseil d'administration de Ciné – La Mouette (association audiovisuelle de l'INSA)",
 	  	"KLS": "Membre actif de l'association KLS, DJ et production de musique électronique",

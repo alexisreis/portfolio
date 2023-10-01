@@ -234,7 +234,7 @@ export default function Home({ posts }) {
 
           <a
             className="focusable flex flex-none cursor-pointer items-center justify-center gap-2 rounded-md bg-red-500 py-2 px-2.5 font-medium text-white shadow-lg shadow-md shadow-gray-500/10 transition duration-300 hover:bg-red-600 hover:shadow-lg focus:ring-4 focus:ring-red-500/40 focus:ring-offset-2 focus:ring-offset-red-500/20 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-400/40 dark:focus:ring-offset-red-400/20 sm:w-auto sm:px-3 sm:pl-2.5"
-            href="/static/"
+            href={i18n.t('home.download_resume_link')}
             download
           >
             <svg
@@ -265,9 +265,9 @@ export default function Home({ posts }) {
       {/* PROJECTS */}
 
       <div className="content">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Projects</h2>
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">{i18n.t('projects.title')}</h2>
         <p className="max-w-[46ch] leading-relaxed text-zinc-500 dark:text-slate-300">
-          A selection of projects I worked on in the past few years.
+          {i18n.t('projects.subtitle')}
         </p>
       </div>
       <div className="container py-8">
@@ -293,7 +293,7 @@ export default function Home({ posts }) {
       </div>
 
       <div className="content mt-8 sm:mt-12">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Internships</h2>
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">{i18n.t("home.experiences.interships")}</h2>
         <ul className="mt-8">
           <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
             <a
@@ -371,7 +371,7 @@ export default function Home({ posts }) {
 
       {/* SCHOOLS */}
       <div className="content mt-8 sm:mt-12">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Education</h2>
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">{i18n.t("home.education.title")}</h2>
         <ul className="mt-8">
           <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
             <a
@@ -480,7 +480,7 @@ export default function Home({ posts }) {
       </div>
 
       <div className="content mt-8 sm:mt-12">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Organizations</h2>
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">{i18n.t('home.organizations.title')}</h2>
         <ul className="mt-8">
           <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
             <a

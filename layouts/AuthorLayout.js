@@ -34,7 +34,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               </div>
             </div>
 
-            <div>
+            <div className="px-8">
               <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
               <div className="text-gray-500 dark:text-gray-400">{company}</div>
             </div>

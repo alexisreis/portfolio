@@ -48,8 +48,10 @@
 	  "description11": ", the INSA audiovisual society."
 	},
 	"download_resume": "Download my resume",
+	"download_resume_link": "/static/Alexis_Reis_CV_EN.pdf",
 	"see_all_projects": "See all my projects here.",
 	"experiences": {
+	  "internships": "Internships",
 	  "worldline": {
 		"date1": "MAY",
 		"date2": "AUG 2023",
@@ -62,11 +64,13 @@
 	  }
 	},
 	"education" : {
+	  "title": "Education",
 	  "trinity": "ERASMUS student at the Computer Science department, final semester.",
 	  "insa": "Student in Computer Science engineering school, final year.",
 	  "lycee": "Scientific Baccalaureate, with honors."
 	},
 	"organizations": {
+	  "title": "Organizations",
 	  "AEDI": "Student association of the Computer Science department at INSA Lyon (AEDI). Active member then secretary for a year.",
 	  "CLM" : "Audiovisual and cinema society, member of the board.",
 	  "KLS": "DJ and music production society. Active member.",
