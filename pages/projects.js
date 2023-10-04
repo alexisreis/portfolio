@@ -8,7 +8,6 @@ import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 import { useI18n } from 'next-localization';
 
-
 export const POSTS_PER_PAGE = 6;
 
 export async function getStaticProps() {
@@ -23,19 +22,16 @@ export async function getStaticProps() {
 }
 
 export default function Projects() {
-
   const i18n = useI18n();
 
   const [searchValue, setSearchValue] = useState('');
   const filteredBlogPosts = projectsData.filter((frontMatter) => {
-    const searchContent = frontMatter.title + frontMatter.description +
-     frontMatter.tags.join(' ');
+    const searchContent = frontMatter.title + frontMatter.description + frontMatter.tags.join(' ');
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
 
   // If initialDisplayPosts exist, display it if no searchValue is specified
-  const displayPosts =
-    projectsData.length > 0 && !searchValue ? projectsData : filteredBlogPosts;
+  const displayPosts = projectsData.length > 0 && !searchValue ? projectsData : filteredBlogPosts;
 
   return (
     <>

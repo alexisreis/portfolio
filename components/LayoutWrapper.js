@@ -7,12 +7,11 @@ import Footer from './Footer';
 import MobileNav from './MobileNav';
 import ThemeSwitch from './ThemeSwitch';
 import NextLink from 'next/link';
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 import { useI18n } from 'next-localization';
 
 const LayoutWrapper = ({ children }) => {
-
   const i18n = useI18n();
 
   return (

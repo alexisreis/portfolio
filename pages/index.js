@@ -23,27 +23,9 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="space-y-2 pt-6 pb-4 md:space-y-5">
-        <div className="flex flex-col-reverse items-start sm:flex-row">
-          <div className="flex flex-col pr-8">
-            <h1 className="mb-1 text-3xl font-bold tracking-tight text-zinc-800 dark:text-white md:text-5xl">
-              Alexis Reis
-            </h1>
-            <h2 className="mb-4 text-xl font-bold tracking-tight text-zinc-600 dark:text-white md:text-2xl">
-              {i18n.t('home.status')}
-            </h2>
-
-            <Link
-              href="mailto:alexisreis@outlook.fr"
-              aria-label="Contact me!"
-              className="mt-4 animate-bounce items-center space-x-4 rounded-xl bg-red-500 p-6 text-white shadow-md transition duration-300 hover:bg-red-600 hover:shadow-lg focus:ring-4 focus:ring-red-500/40 focus:ring-offset-2 focus:ring-offset-red-500/20 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-400/40 dark:focus:ring-offset-red-400/20"
-              title={i18n.t('home.contact_me')}
-            >
-              {i18n.t('home.looking_for')}
-              <strong> {i18n.t('home.looking_for_what')} </strong>
-            </Link>
-          </div>
-          <div className="relative mb-8 mr-auto w-[100px] sm:mb-0 sm:w-[200px]">
+      <div className="space-y-2 md:space-y-5">
+        <div className="mr-auto flex flex-row items-center">
+          <div className="w-[100px] sm:mb-0 sm:w-[200px]">
             <Image
               src="/static/images/profile.jpg"
               alt="avatar"
@@ -52,7 +34,34 @@ export default function Home({ posts }) {
               className="rounded-full"
             />
           </div>
+
+          <div className="flex flex-1 flex-col p-8">
+            <h1 className="mb-1 text-3xl font-bold tracking-tight text-zinc-800 dark:text-white md:text-5xl">
+              Alexis Reis
+            </h1>
+            <h2 className="mb-4 text-xl font-bold tracking-tight text-zinc-600 dark:text-white md:text-xl">
+              {i18n.t('home.status')}
+            </h2>
+            <Link
+              href="mailto:alexisreis@outlook.fr"
+              aria-label="Contact me!"
+              className="mt-4 hidden animate-bounce items-center space-x-4 rounded-xl bg-red-500 p-6 text-white shadow-md transition duration-300 hover:bg-red-600 hover:shadow-lg focus:ring-4 focus:ring-red-500/40 focus:ring-offset-2 focus:ring-offset-red-500/20 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-400/40 dark:focus:ring-offset-red-400/20 sm:block"
+              title={i18n.t('home.contact_me')}
+            >
+              {i18n.t('home.looking_for')}
+              <strong> {i18n.t('home.looking_for_what')} </strong>
+            </Link>
+          </div>
         </div>
+        <Link
+          href="mailto:alexisreis@outlook.fr"
+          aria-label="Contact me!"
+          className="my-4 block animate-bounce items-center space-x-4 rounded-xl bg-red-500 p-6 text-white shadow-md transition duration-300 hover:bg-red-600 hover:shadow-lg focus:ring-4 focus:ring-red-500/40 focus:ring-offset-2 focus:ring-offset-red-500/20 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-400/40 dark:focus:ring-offset-red-400/20 sm:hidden"
+          title={i18n.t('home.contact_me')}
+        >
+          {i18n.t('home.looking_for')}
+          <strong> {i18n.t('home.looking_for_what')} </strong>
+        </Link>
       </div>
 
       <div className="space-y-4 text-zinc-500 dark:text-slate-300">
@@ -71,14 +80,13 @@ export default function Home({ posts }) {
           </a>
           , <strong>{i18n.t('home.presentation.p2')}</strong>
         </p>
-
-        <div className="-m-4 mb-2 flex flex-wrap">
-          <div className="flex flex-col items-center justify-center p-4 transition duration-300 ease-in-out hover:scale-105 sm:w-1/2 md:w-1/4">
+        <div className="-m-4 mb-2 flex flex-row flex-wrap justify-center">
+          <div className="flex flex-col items-center justify-center p-4 transition duration-300 ease-in-out hover:scale-105 sm:w-3/4 md:w-1/4">
             <Image
               src="/static/images/profile/rhino.png"
               alt="INSA Lyon"
-              width="100px"
-              height="100px"
+              width={100}
+              height={100}
               className="dark:invert"
             />
             <span className="block text-center text-xl font-bold text-red-500">INSA Lyon</span>
@@ -90,7 +98,7 @@ export default function Home({ posts }) {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center p-4 transition duration-300 ease-in-out hover:scale-105 sm:w-1/2 md:w-1/4">
+          <div className="flex flex-col items-center justify-center p-4 transition duration-300 ease-in-out hover:scale-105 sm:w-3/4 md:w-1/4">
             <span className="block text-center text-xl font-bold text-gray-600 dark:text-gray-200">
               {i18n.t('home.tiles.passionate.title')}
             </span>
@@ -108,7 +116,7 @@ export default function Home({ posts }) {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center p-4 transition duration-300 ease-in-out hover:scale-105 sm:w-1/2 md:w-1/4">
+          <div className="flex flex-col items-center justify-center p-4 transition duration-300 ease-in-out hover:scale-105 sm:w-3/4 md:w-1/4">
             <span className="block text-center text-xl font-bold text-gray-600 dark:text-gray-200">
               {i18n.t('home.tiles.sport.title')}
             </span>
@@ -126,7 +134,7 @@ export default function Home({ posts }) {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center p-4 transition duration-300 ease-in-out hover:scale-105 sm:w-1/2 md:w-1/4">
+          <div className="flex flex-col items-center justify-center p-4 transition duration-300 ease-in-out hover:scale-105 sm:w-3/4 md:w-1/4">
             <Image
               src="/static/images/profile/cinema.png"
               alt="Cinema"
@@ -265,7 +273,9 @@ export default function Home({ posts }) {
       {/* PROJECTS */}
 
       <div className="content">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">{i18n.t('projects.title')}</h2>
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">
+          {i18n.t('projects.title')}
+        </h2>
         <p className="max-w-[46ch] leading-relaxed text-zinc-500 dark:text-slate-300">
           {i18n.t('projects.subtitle')}
         </p>
@@ -284,7 +294,7 @@ export default function Home({ posts }) {
           ))}
         </div>
         <Link
-          href={'/blog/projects'}
+          href={'/projects'}
           className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
           aria-label={`Link to all projects`}
         >
@@ -293,7 +303,9 @@ export default function Home({ posts }) {
       </div>
 
       <div className="content mt-8 sm:mt-12">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">{i18n.t("home.experiences.interships")}</h2>
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">
+          {i18n.t('home.experiences.interships')}
+        </h2>
         <ul className="mt-8">
           <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
             <a
@@ -371,7 +383,9 @@ export default function Home({ posts }) {
 
       {/* SCHOOLS */}
       <div className="content mt-8 sm:mt-12">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">{i18n.t("home.education.title")}</h2>
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">
+          {i18n.t('home.education.title')}
+        </h2>
         <ul className="mt-8">
           <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
             <a
@@ -480,7 +494,9 @@ export default function Home({ posts }) {
       </div>
 
       <div className="content mt-8 sm:mt-12">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">{i18n.t('home.organizations.title')}</h2>
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">
+          {i18n.t('home.organizations.title')}
+        </h2>
         <ul className="mt-8">
           <li className="dark:text-zinc-350 my-5 flex items-center gap-4 text-zinc-500">
             <a

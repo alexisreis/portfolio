@@ -1,0 +1,52 @@
+---
+title: annotation-app, une web-app pour annoter des images
+date: '2022-08-12'
+tags: ['Internship', 'Web app']
+draft: false
+images: ['/static/images/projects/annotation-app.jpg']
+summary: 'Stage au Liris.'
+---
+
+Ce projet a été réalisé dans le cadre de mon stage de 2 mois au Liris durant l'été 2022.
+Ma mission était de développer une web-app permettant aux utilisateurs
+d'annoter des documents scannés avec des données sensorielles.
+Les documents étaient des documents de la ville de Lyon (France) au 18ème siècle.
+
+L'application, appelée annotation-app, permet aux utilisateurs de :
+1. visualiser des documents scannés dans un navigateur web
+2. annoter les pages scannées avec des données sensorielles et transcrire le texte
+3. sauvegarder leur travail et le partager avec tous les utilisateurs
+4. afficher des statistiques sensorielles sur les documents
+
+L'application a été développée avec React pour le front-end et Python et Flask pour le back-end.
+
+**Le code est en ligne sur [Github](https://github.com/alexisreis/annotation-app).**
+
+## Captures d'écran
+
+* la vue document :
+
+<Image
+	alt={`annotation-app`}
+	src={`/static/images/projects/annotation-app.jpg`}
+	width={995}
+	height={527}
+	priority
+/>
+
+Ici nous pouvoir voir toutes les pages scannées qui composent le document et pour
+chaque page, des statistiques sensorielles peuvent être affichées. Ces statistiques
+sont calculées à partir des annotations faites par les utilisateurs sur chaque page.
+
+Il y a aussi des statistiques sur le document au total. Par exemple, nous
+pouvons voir les mots sensoriels les plus utilisés dans le document et les sens les
+plus trouvés.
+
+Cette application a été développée pour le projet SYSTESENS au Liris.
+
+
+## Technologies utilisées
+
+* Front : React
+* Back : Python, Flask
+* Github, Docker

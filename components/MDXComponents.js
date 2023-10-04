@@ -6,7 +6,6 @@ import CustomLink from './Link';
 import TOCInline from './TOCInline';
 import Pre from './Pre';
 
-
 export const MDXComponents = {
   Image,
   TOCInline,

@@ -7,23 +7,36 @@ import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/l
 const DEFAULT_LAYOUT = 'PostLayout';
 
 export async function getStaticPaths() {
-  const posts = getFiles('blog');
+  const enPosts = getFiles('blog/projects/en'); // Fetch English blog post files
+  const frPosts = getFiles('blog/projects/fr'); // Fetch French blog post files
+
+  const enPaths = enPosts.map((p) => ({
+    params: {
+      slug: formatSlug(p).split('/'),
+    },
+    locale: 'en', // Specify the locale for English posts
+  }));
+
+  const frPaths = frPosts.map((p) => ({
+    params: {
+      slug: formatSlug(p).split('/'),
+    },
+    locale: 'fr', // Specify the locale for French posts
+  }));
+
   return {
-    paths: posts.map((p) => ({
-      params: {
-        slug: formatSlug(p).split('/'),
-      },
-    })),
+    paths: [...enPaths, ...frPaths], // Combine English and French paths
     fallback: false,
   };
 }
 
-export async function getStaticProps({ params }) {
-  const allPosts = await getAllFilesFrontMatter('blog');
+export async function getStaticProps({ params, locale }) {
+  const allPosts = await getAllFilesFrontMatter(`blog/projects/${locale}`);
   const postIndex = allPosts.findIndex((post) => formatSlug(post.slug) === params.slug.join('/'));
   const prev = allPosts[postIndex + 1] || null;
   const next = allPosts[postIndex - 1] || null;
-  const post = await getFileBySlug('blog', params.slug.join('/'));
+  const post = await getFileBySlug(`blog/projects/${locale}`, params.slug.join('/'));
+
   const authorList = post.frontMatter.authors || ['default'];
   const authorPromise = authorList.map(async (author) => {
     const authorResults = await getFileBySlug('authors', [author]);
