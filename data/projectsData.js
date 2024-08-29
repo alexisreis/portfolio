@@ -4,7 +4,7 @@ const projectsData = [
     date: 'MAY - AUG 2023',
     description: `Internship at Worldline Labs, Villeurbanne, France.`,
     tags: ['React', 'Node.js', 'Docker', 'web', 'fullstack'],
-    imgSrc: '/static/images/projects/annotation-app.jpg',
+    imgSrc: '/static/images/projects/resapp-1.png',
     href: '/blog/2023-08-Resapp',
   },
   {
