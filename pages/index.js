@@ -29,8 +29,8 @@ export default function Home({ posts }) {
             <Image
               src="/static/images/profile.jpg"
               alt="avatar"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
               className="rounded-full"
             />
           </div>
@@ -106,8 +106,8 @@ export default function Home({ posts }) {
             <Image
               src="/static/images/profile/tech.png"
               alt="Tech passion"
-              width="100px"
-              height="100px"
+              width={100}
+              height={100}
               className="dark:invert"
             />
 
@@ -124,8 +124,8 @@ export default function Home({ posts }) {
             <Image
               src="/static/images/profile/handball.png"
               alt="Sporty"
-              width="100px"
-              height="100px"
+              width={100}
+              height={100}
               className="dark:invert"
             />
 
@@ -138,8 +138,8 @@ export default function Home({ posts }) {
             <Image
               src="/static/images/profile/cinema.png"
               alt="Cinema"
-              width="100px"
-              height="100px"
+              width={100}
+              height={100}
               className="dark:invert"
             />
             <span className="block text-center text-xl font-bold text-gray-600 dark:text-gray-200">
@@ -318,8 +318,8 @@ export default function Home({ posts }) {
                 <Image
                   src="/static/images/workxp/worldline.png"
                   alt="Worldline"
-                  width="56px"
-                  height="56px"
+                  width={56}
+                  height={56}
                   className="rounded-md"
                 />
               </div>
@@ -354,8 +354,8 @@ export default function Home({ posts }) {
                 <Image
                   src="/static/images/workxp/liris.png"
                   alt="LIRIS"
-                  width="56px"
-                  height="56px"
+                  width={56}
+                  height={56}
                   className="rounded-md"
                 />
               </div>
@@ -398,8 +398,8 @@ export default function Home({ posts }) {
                 <Image
                   src="/static/images/schools/tcd.png"
                   alt="Trinity College Dublin"
-                  width="56px"
-                  height="56px"
+                  width={56}
+                  height={56}
                   className="rounded-md"
                 />
               </div>
@@ -431,8 +431,8 @@ export default function Home({ posts }) {
                 <Image
                   src="/static/images/schools/insa.svg"
                   alt="INSA Lyon"
-                  width="56px"
-                  height="56px"
+                  width={56}
+                  height={56}
                   className="rounded-md"
                 />
               </div>
@@ -466,8 +466,8 @@ export default function Home({ posts }) {
                 <Image
                   src="/static/images/schools/lycee_bonaparte.png"
                   alt="Lycée Bonaparte d'Autun"
-                  width="56px"
-                  height="56px"
+                  width={56}
+                  height={56}
                   className="rounded-md"
                 />
               </div>
@@ -509,8 +509,8 @@ export default function Home({ posts }) {
                 <Image
                   src="/static/images/associations/AEDI.png"
                   alt="AEDI INSA Lyon"
-                  width="56px"
-                  height="56px"
+                  width={56}
+                  height={56}
                   className="rounded-md"
                 />
               </div>
@@ -545,8 +545,8 @@ export default function Home({ posts }) {
                 <Image
                   src="/static/images/associations/mouette.png"
                   alt="Ciné - La Mouette"
-                  width="56px"
-                  height="56px"
+                  width={56}
+                  height={56}
                   className="rounded-md"
                 />
               </div>
@@ -581,8 +581,8 @@ export default function Home({ posts }) {
                 <Image
                   src="/static/images/associations/kls.png"
                   alt="KLS"
-                  width="56px"
-                  height="56px"
+                  width={56}
+                  height={56}
                   className="rounded-md"
                 />
               </div>
