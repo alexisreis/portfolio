@@ -1,12 +1,12 @@
 import { useState } from 'react';
+import { useI18n } from 'next-localization';
 
-import siteMetadata from '@/data/siteMetadata';
-import projectsData from '@/data/projectsData';
 import Card from '@/components/Card';
 import { PageSEO } from '@/components/SEO';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 
-import { useI18n } from 'next-localization';
+import siteMetadata from '@/data/siteMetadata';
+import projectsData from '@/data/projectsData';
 
 export const POSTS_PER_PAGE = 6;
 
@@ -30,7 +30,6 @@ export default function Projects() {
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
 
-  // If initialDisplayPosts exist, display it if no searchValue is specified
   const displayPosts = projectsData.length > 0 && !searchValue ? projectsData : filteredBlogPosts;
 
   return (
@@ -46,31 +45,28 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="w-100">
+        <div className="relative block">
+          <span className="absolute inset-y-0 left-0 flex items-center pl-2 text-gray-600 dark:text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="h-8 w-8"
+            >
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </span>
           <input
             aria-label={i18n.t('projects.search')}
             type="text"
             onChange={(e) => setSearchValue(e.target.value)}
             placeholder={i18n.t('projects.search')}
-            className="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
+            className="block w-full py-2 pl-12 pr-3 focus:border-primary-500 text-gray-600 focus:ring-primary-500 rounded-md sm:text-sm border-gray-300 dark:border-gray-900 dark:bg-gray-800 dark:text-white focus:outline-none"
           />
-          <svg
-            className="absolute right-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
         </div>
 
-        <div className="container py-12">
+        <div className="container py-4">
           <div className="-m-4 flex flex-wrap">
             {!filteredBlogPosts.length && i18n.t('projects.noResults')}
             {displayPosts.map((d) => (
