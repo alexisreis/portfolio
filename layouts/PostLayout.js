@@ -1,9 +1,9 @@
 import Link from '@/components/Link';
 import PageTitle from '@/components/PageTitle';
+import PostAuthorCard from '@/components/PostAuthorCard';
 import { BlogSEO } from '@/components/SEO';
+
 import siteMetadata from '@/data/siteMetadata';
-import formatDate from '@/lib/utils/formatDate';
-import Image from '@/components/Image';
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { date, title, readingTime } = frontMatter;
@@ -15,42 +15,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
         <div>
           <header className="pb-10">
             <div className="mt-4 space-y-1 text-left">
-              <dl>
-                <div>
-                  <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>{formatDate(date)}</time>
-                  </dd>
-                </div>
-              </dl>
-              <div>
-                <PageTitle>{title}</PageTitle>
-              </div>
+              <PageTitle>{title}</PageTitle>
             </div>
             <div className="flex items-center justify-between">
-              <div>
-                {authorDetails.map((author) => (<>
-                    <div className="mb-1 flex items-center space-x-2">
-                      {author.avatar && (
-                        <Image
-                          src={author.avatar}
-                          width={24}
-                          height={24}
-                          alt="avatar"
-                          className="h-10 w-10 rounded-full"
-                        />
-                      )}
-                      <dl className="whitespace-nowrap text-sm font-medium leading-5">
-                        <dt className="sr-only">Name</dt>
-                        <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
-                      </dl>
-                    </div>
-                  </>
-                ))}
-              </div>
-              <div className="flex items-center space-x-2 ">
-                <div className="text-gray-500 dark:text-gray-400">{readingTime.text}</div>
-              </div>
+              <PostAuthorCard authorDetails={authorDetails} date={date} readingTime={readingTime} />
             </div>
           </header>
           <div className="pb-8 " style={{ gridTemplateRows: 'auto 1fr' }}>
