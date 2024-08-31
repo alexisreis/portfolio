@@ -17,12 +17,12 @@ const MAX_DISPLAY = 2;
 
 export async function getStaticProps({ locale }) {
   const posts = await getAllFilesFrontMatter('blog');
-  const { default: lngDict = {} } = await import(`../locales/${locale}.json`);
+  const { default: lngDict = {} } = await import(`../locales/${locale}`);
 
   return { props: { posts, lngDict } };
 }
 
-export default function Home({ posts }) {
+export default function Home() {
   const i18n = useI18n();
 
   return (
