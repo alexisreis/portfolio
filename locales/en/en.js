@@ -52,8 +52,13 @@ module.exports = {
     see_all_projects: 'See all my projects here.',
     workxp: {
       title: 'Work experiences',
+      onepoint: {
+        title: 'Backend developer & Cloud engineer - Onepoint, Paris',
+        dates: 'FEB 2024 - NOW',
+        description: '6 months internship then open ended contract.',
+      },
       worldline: {
-        title: 'Fullstack developer - Worldline Labs Lyon',
+        title: 'Fullstack developer - Worldline Labs, Lyon',
         dates: 'MAY - AUG 2023',
         description: '3 months internship.',
       },
@@ -75,6 +80,9 @@ module.exports = {
       CLM: 'Audiovisual and cinema society, member of the board.',
       KLS: 'DJ and music production society. Active member.',
       TODAY: 'TODAY',
+    },
+    certifications: {
+      title: 'Certifications',
     },
   },
   projects: {
