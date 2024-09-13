@@ -52,6 +52,11 @@ module.exports = {
     see_all_projects: 'Voir tous mes projets ici.',
     workxp: {
       title: 'Expériences professionnelles',
+      onepoint: {
+        title: 'Développeur backend & ingénieur cloud - Onepoint, Paris',
+        dates: 'FEV 2024 - AUJ',
+        description: "Stage de fin d'études puis CDI.",
+      },
       worldline: {
         title: 'Développeur fullstack - Worldline Labs, Lyon',
         dates: 'MAI - AOUT 2023',
@@ -76,6 +81,9 @@ module.exports = {
       CLM: "Membre du conseil d'administration de Ciné – La Mouette (association audiovisuelle de l'INSA)",
       KLS: "Membre actif de l'association KLS, DJ et production de musique électronique",
       TODAY: "AUJOURD'HUI",
+    },
+    certifications: {
+      title: 'Certifications',
     },
   },
   projects: {

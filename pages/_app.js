@@ -16,8 +16,7 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 const isSocket = process.env.SOCKET;
 
 export default function App({ Component, pageProps }) {
-
-  const { lngDict, ...rest } = pageProps;
+  const { lngDict } = pageProps;
   const router = useRouter();
 
   return (

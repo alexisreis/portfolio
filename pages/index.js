@@ -9,9 +9,11 @@ import EducationList from '@/components/list/EducationList';
 import OrganizationsList from '@/components/list/OrganizationsList';
 import { PageSEO } from '@/components/SEO';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
+import CurrentlyWorkingAt from '@/components/CurrentlyWorkingAt';
 
 import siteMetadata from '@/data/siteMetadata';
 import projectsData from '@/data/projectsData';
+import CertificationsList from '@/components/list/CertificationsList';
 
 const MAX_DISPLAY = 2;
 
@@ -47,7 +49,8 @@ export default function Home() {
             <h2 className="mb-4 text-xl font-bold tracking-tight text-zinc-600 dark:text-white md:text-xl">
               {i18n.t('home.status')}
             </h2>
-            <Link
+            <CurrentlyWorkingAt isMobileOnly={false} />
+            {/*            <Link
               href="mailto:alexisreis@outlook.fr"
               aria-label="Contact me!"
               className="mt-4 hidden animate-bounce items-center space-x-4 rounded-xl bg-red-500 p-6 text-white shadow-md transition duration-300 hover:bg-red-600 hover:shadow-lg focus:ring-4 focus:ring-red-500/40 focus:ring-offset-2 focus:ring-offset-red-500/20 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-400/40 dark:focus:ring-offset-red-400/20 sm:block"
@@ -55,10 +58,11 @@ export default function Home() {
             >
               {i18n.t('home.looking_for')}
               <strong> {i18n.t('home.looking_for_what')} </strong>
-            </Link>
+            </Link>*/}
           </div>
         </div>
-        <Link
+        <CurrentlyWorkingAt isMobileOnly={true} />
+        {/*       <Link
           href="mailto:alexisreis@outlook.fr"
           aria-label="Contact me!"
           className="mt-8 block animate-bounce items-center space-x-4 rounded-xl bg-red-500 p-6 text-white shadow-md transition duration-300 hover:bg-red-600 hover:shadow-lg focus:ring-4 focus:ring-red-500/40 focus:ring-offset-2 focus:ring-offset-red-500/20 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-400/40 dark:focus:ring-offset-red-400/20 sm:hidden"
@@ -66,7 +70,7 @@ export default function Home() {
         >
           {i18n.t('home.looking_for')}
           <strong> {i18n.t('home.looking_for_what')} </strong>
-        </Link>
+        </Link>*/}
         <SocialIconsList />
       </div>
 
@@ -229,6 +233,7 @@ export default function Home() {
         </div>
       </div>
       <WorkXpList />
+      <CertificationsList />
       <EducationList />
       <OrganizationsList />
     </>

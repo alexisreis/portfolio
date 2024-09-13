@@ -1,5 +1,12 @@
 export const workxp = (i18n) => [
   {
+    title: i18n.t('home.workxp.onepoint.title'),
+    img: '/static/images/workxp/onepoint.svg',
+    dates: i18n.t('home.workxp.onepoint.dates'),
+    description: i18n.t('home.workxp.onepoint.description'),
+    href: 'https://groupeonepoint.com',
+  },
+  {
     title: i18n.t('home.workxp.worldline.title'),
     img: '/static/images/workxp/worldline.png',
     dates: i18n.t('home.workxp.worldline.dates'),
