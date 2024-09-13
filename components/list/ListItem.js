@@ -4,7 +4,7 @@ const ListItem = ({ title, img, dates, description, href }) => {
   return (
     <li className="my-5 flex items-center gap-4">
       <a className="link focusable" href={href} target="_blank" rel="noopener noreferrer">
-        <div className="flex flex-col items-center justify-center h-14 w-14 rounded-md bg-gray-100">
+        <div className="flex flex-col items-center justify-center h-14 w-14 rounded-md bg-gray-100 dark:bg-gray-700">
           <Image src={img} alt={title} width={56} height={56} className="rounded-md" />
         </div>
       </a>
