@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import Link from './Link';
 import headerNavLinks from '@/data/headerNavLinks';
+import { useRouter } from 'next/router';
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false);
-
+  const router = useRouter();
   const onToggleNav = () => {
     setNavShow((status) => {
       if (status) {
@@ -18,10 +19,10 @@ const MobileNav = () => {
   };
 
   return (
-    <div className="sm:hidden">
+    <div className="flex items-center sm:hidden">
       <button
         type="button"
-        className="ml-1 mr-1 h-8 w-8 rounded py-1"
+        className="h-8 w-8 rounded"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
@@ -47,7 +48,7 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed right-0 top-24 z-10 h-full w-full transform bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${
+        className={`fixed right-0 top-24 z-10 h-full w-full transform bg-gray-100 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${
           navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -62,7 +63,7 @@ const MobileNav = () => {
             <div key={link.title} className="px-12 py-4">
               <Link
                 href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                className={`text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100 ${router.pathname === link.href ? 'text-red-500 dark:text-red-400' : ''}`}
                 onClick={onToggleNav}
               >
                 {link.title}
