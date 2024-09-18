@@ -6,7 +6,7 @@ const PostAuthorCard = ({ authorDetails, date, readingTime }) => {
     <>
       {authorDetails.map((author) => (
         <>
-          <div className="mb-1 flex items-center space-x-2">
+          <div className="mb-1 ml-2 flex items-center space-x-2">
             {author.avatar && (
               <Image
                 src={author.avatar}

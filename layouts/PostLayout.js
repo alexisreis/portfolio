@@ -4,6 +4,7 @@ import PostAuthorCard from '@/components/PostAuthorCard';
 import { BlogSEO } from '@/components/SEO';
 
 import siteMetadata from '@/data/siteMetadata';
+import Image from '@/components/Image';
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { date, title, readingTime } = frontMatter;
@@ -13,13 +14,19 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       <BlogSEO url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
       <article>
         <div>
-          <header className="pb-10">
-            <div className="mt-4 space-y-1 text-left">
-              <PageTitle>{title}</PageTitle>
+          <header className="pb-6">
+            <div className="relative mb-4">
+              <Image
+                src={frontMatter.images[0]}
+                width={1440}
+                height={720}
+                alt="Cover image"
+                className="w-full h-64 object-cover backdrop-filter backdrop-blur-sm"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white dark:to-gray-900"></div>
+              <PageTitle className="absolute bottom-0 left-0 right-0">{title}</PageTitle>
             </div>
-            <div className="flex items-center justify-between">
-              <PostAuthorCard authorDetails={authorDetails} date={date} readingTime={readingTime} />
-            </div>
+            <PostAuthorCard authorDetails={authorDetails} date={date} readingTime={readingTime} />
           </header>
           <div className="pb-8 " style={{ gridTemplateRows: 'auto 1fr' }}>
             <div className=" xl:col-span-3 xl:row-span-2 xl:pb-0">

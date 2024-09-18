@@ -53,7 +53,7 @@ const SocialIconsList = () => {
       </a>
 
       <a
-        className="focusable flex flex-none cursor-pointer items-center justify-center gap-2 rounded-md bg-red-500 py-2 px-2.5 font-medium text-white shadow-lg shadow-md shadow-gray-500/10 transition duration-300 hover:bg-red-600 hover:shadow-lg focus:ring-4 focus:ring-red-500/40 focus:ring-offset-2 focus:ring-offset-red-500/20 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-400/40 dark:focus:ring-offset-red-400/20 sm:w-auto sm:px-3 sm:pl-2.5"
+        className="focusable flex flex-none cursor-pointer items-center justify-center gap-2 rounded-md bg-red-500 py-2 px-2.5 font-medium text-white shadow-lg shadow-md shadow-gray-500/10 transition duration-300 hover:bg-red-600 hover:shadow-lg focus:ring-4 focus:ring-red-500/40 focus:ring-offset-2 focus:ring-offset-red-500/20 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-400/40 dark:focus:ring-offset-red-400/20 sm:w-auto sm:px-3 sm:pl-2.5 dark:text-zinc-900"
         href={i18n.t('home.download_resume_link')}
         download
       >

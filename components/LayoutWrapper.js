@@ -8,9 +8,11 @@ import ThemeSwitch from './ThemeSwitch';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 import { useI18n } from 'next-localization';
+import { useRouter } from 'next/router';
 
 const LayoutWrapper = ({ children }) => {
   const i18n = useI18n();
+  const router = useRouter();
 
   return (
     <SectionContainer>
@@ -31,18 +33,17 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                  className={`p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4 ${router.pathname === link.href ? 'text-red-500 dark:text-red-400 border-b-4 border-red-500' : ''} dot`}
                 >
                   {i18n.t(`nav_links.${link.title}`)}
                 </Link>
               ))}
             </div>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-row items-center ml-2 gap-2">
               <LanguageSwitcher />
               <ThemeSwitch />
+              <MobileNav />
             </div>
-
-            <MobileNav />
           </div>
         </header>
         <main className="mb-auto">{children}</main>
