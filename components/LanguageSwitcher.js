@@ -50,7 +50,7 @@ const LanguageSwitcher = () => {
         className="flex flex-row w-8 h-8 items-center justify-center rounded-md p-1 text-xl hover:bg-gray-200 dark:hover:bg-gray-800 dark:bg-gray-900"
       >
         <Image
-          className="rounded-xl border-2 border-gray-300 dark:border-gray-600"
+          className="rounded-xl border-2 border-gray-900 dark:border-gray-200"
           src={flags[currentLocale]}
           alt={languages[currentLocale]}
           width={24}
@@ -59,18 +59,18 @@ const LanguageSwitcher = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-1 w-40 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-10 border dark:bg-gray-800 dark:border-gray-500">
+        <div className="absolute right-0 mt-2 w-40 rounded-md shadow-lg border border-gray-900 bg-white dark:bg-background-color dark:border-gray-200">
           <div role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             {locales.map((locale) => (
               <Link
                 key={locale}
-                className="flex flex-1 rounded-md px-2 py-2 text-base text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-gray-100"
+                className="flex flex-1 rounded-md px-2 py-2 text-base text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100"
                 href={router.asPath}
                 locale={locale}
                 onClick={closeMenu}
               >
                 <Image
-                  className="mr-2 rounded-xl border-2 border-gray-300 dark:border-gray-600"
+                  className="mr-2 rounded-xl border-2 border-gray-900 dark:border-gray-200"
                   src={flags[locale]}
                   alt={languages[locale]}
                   width={24}
