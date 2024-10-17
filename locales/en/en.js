@@ -1,6 +1,11 @@
 module.exports = {
   home: {
-    status: 'Computer Science student (final year)',
+    currently_working_at: {
+      title: 'Currently working as a',
+      job: 'Fullstack developer & DevOps',
+      company: 'at Onepoint, Paris',
+    },
+    status: 'Computer Science engineer',
     looking_for: '\uD83D\uDD0E Looking for a',
     looking_for_what: '6 months internship !',
     contact_me: 'Contact me!',
@@ -10,15 +15,12 @@ module.exports = {
       p2: 'I am currently looking for a 6 months internship in the field of software engineering.',
     },
     tiles: {
-      currently: {
-        p1: 'Final year ',
-        p2: '(5th)',
-        p3: 'in',
-        p4: 'Computer Science',
+      insa: {
+        p1: 'Master in Computer Science',
       },
       passionate: {
         title: 'Fond of',
-        p1: 'new technologies',
+        p1: 'new technologies and devices',
       },
       sport: {
         title: 'Sporty',
@@ -27,29 +29,11 @@ module.exports = {
       cinema: {
         title: 'Cinema',
         p1: 'Cinema class student',
-        p2: 'Member of CLM board',
       },
-    },
-    me: {
-      description1: "I'm 22, and I'm fond of new technologies.",
-      description2: 'I give ',
-      lessons: 'maths / physics / computer and english private lessons',
-      description3: 'to undergraduate and high school students.',
-      description4: 'I was',
-      description5: 'secretary-general of the',
-      aedi: 'AEDI',
-      description6: '(the computer science department student association).',
-      description7: 'I am also in ',
-      cinemaClass: 'Cinema class',
-      description8: 'at INSA and a',
-      description9: 'member of',
-      cineLaMouette: 'Ciné – La Mouette',
-      description10: '’s board',
-      description11: ', the INSA audiovisual society.',
     },
     download_resume: 'My resume',
     download_resume_link: '/static/Alexis_Reis_CV_EN.pdf',
-    see_all_projects: 'See all my projects here.',
+    see_all_projects: 'View all my projects here',
     workxp: {
       title: 'Work experiences',
       onepoint: {
@@ -68,28 +52,27 @@ module.exports = {
         description: '2 months internship.',
       },
     },
-    education: {
-      title: 'Education',
+    formation: {
+      title: 'Formation',
       trinity: 'ERASMUS student at the Computer Science department for a semester.',
       insa: 'Student in Computer Science engineering school, final year.',
       lycee: 'Scientific Baccalaureate, with honors.',
     },
-    organizations: {
-      title: 'Organizations',
+    societies: {
+      title: 'Societies',
       AEDI: 'Student association of the Computer Science department at INSA Lyon (AEDI).\nActive member then secretary for a year.',
       CLM: 'Audiovisual and cinema society, member of the board.',
       KLS: 'DJ and music production society. Active member.',
-      TODAY: 'TODAY',
     },
     certifications: {
       title: 'Certifications',
+      aws_developer_associate: {
+        dates: 'APRIL 2024',
+      },
+      terraform_associate: {
+        dates: 'JUNE 2024',
+      },
     },
-  },
-  projects: {
-    title: 'Projects',
-    subtitle: 'Some projects I worked on lately.',
-    search: 'Search projects',
-    noResults: 'No projects found.',
   },
   nav_links: {
     home: 'home',

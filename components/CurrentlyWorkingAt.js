@@ -1,13 +1,14 @@
-// import { useI18n } from 'next-localization';
+import { useI18n } from 'next-localization';
 import Image from '@/components/Image';
 
 const CurrentlyWorkingAt = ({ isMobileOnly }) => {
-  // const i18n = useI18n();
+  const i18n = useI18n();
+
   return (
     <div
-      className={`border border-gray-500 rounded-2xl bg-gray-100 p-4 ${isMobileOnly ? 'block sm:hidden' : 'hidden sm:block'} dark:bg-gray-800 dark:text-white`}
+      className={`border border-gray-500 rounded-2xl p-4 ${isMobileOnly ? 'block sm:hidden' : 'hidden sm:block'} dark:text-white dark:border-gray-600`}
     >
-      <h3 className="font-bold text-xl mb-2">Currently working as a</h3>
+      <h3 className="font-bold text-xl mb-2">{i18n.t('home.currently_working_at.title')}</h3>
       <div className="flex gap-4">
         <div className="h-12 w-12 flex justify-center rounded-lg bg-gray-200 dark:bg-gray-700">
           <Image
@@ -19,8 +20,8 @@ const CurrentlyWorkingAt = ({ isMobileOnly }) => {
           />
         </div>
         <div>
-          <h3>Backend developer and cloud engineer</h3>
-          <strong>at Onepoint, Paris</strong>
+          <h3>{i18n.t('home.currently_working_at.job')}</h3>
+          <strong>{i18n.t('home.currently_working_at.company')}</strong>
         </div>
       </div>
     </div>

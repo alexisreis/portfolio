@@ -1,6 +1,11 @@
 module.exports = {
   home: {
-    status: 'Étudiant ingénieur informatique (5A)',
+    currently_working_at: {
+      title: 'Actuellement, je suis un',
+      job: 'Développeur backend & DevOps',
+      company: 'à Onepoint, Paris',
+    },
+    status: 'Ingénieur informatique',
     looking_for: '\uD83D\uDD0E Je recherche',
     looking_for_what: 'un stage de 6 mois !',
     contact_me: 'Me contacter !',
@@ -10,11 +15,8 @@ module.exports = {
       p2: "je recherche actuellement un stage de fin d'études (6 mois) dans le développement logiciel.",
     },
     tiles: {
-      currently: {
-        p1: 'Dernière année ',
-        p2: '(5ème)',
-        p3: "d'école d'ingénieur",
-        p4: 'informatique',
+      insa: {
+        p1: 'Diplômé ingénieur informatique',
       },
       passionate: {
         title: 'Passionné',
@@ -27,29 +29,11 @@ module.exports = {
       cinema: {
         title: 'Cinéphile',
         p1: 'Section Cinéma études',
-        p2: 'Membre du CA de CLM',
       },
-    },
-    me: {
-      description1: "J'ai 22 ans et je suis passionné par les nouvelles technologies.",
-      description2: 'Je donne des ',
-      lessons: 'cours particuliers de maths / physique / informatique et anglais',
-      description3: 'à des étudiants de lycée et de premier cycle.',
-      description4: "J'étais",
-      description5: 'secrétaire général de',
-      aedi: "l'AEDI",
-      description6: "(l'association des étudiants du département d'informatique).",
-      description7: 'Je suis aussi en ',
-      cinemaClass: 'section cinéma études',
-      description8: "à l'INSA et ",
-      description9: "membre du conseil d'administration de",
-      cineLaMouette: 'Ciné – La Mouette',
-      description10: '',
-      description11: ", la société audiovisuelle de l'INSA.",
     },
     download_resume: 'Mon CV',
     download_resume_link: '/static/Alexis_Reis_CV_FR.pdf',
-    see_all_projects: 'Voir tous mes projets ici.',
+    see_all_projects: 'Voir tous mes projets ici',
     workxp: {
       title: 'Expériences professionnelles',
       onepoint: {
@@ -68,14 +52,14 @@ module.exports = {
         description: 'Stage de 2 mois.',
       },
     },
-    education: {
-      title: 'Éducation',
+    formation: {
+      title: 'Formation',
       trinity: "ERASMUS à l'Université de Trinity College à Dublin pour un semestre.",
       insa: "Étudiant à l'INSA de Lyon au département informatique, dernière année.",
       lycee:
         "Baccalauréat scientifique, spécialité mathématiques, option Sciences de l'ingénieur, mention très bien.",
     },
-    organizations: {
+    societies: {
       title: 'Associations',
       AEDI: "Secrétaire général de l'AEDI (Association des Étudiants en Département Informatique)",
       CLM: "Membre du conseil d'administration de Ciné – La Mouette (association audiovisuelle de l'INSA)",
@@ -84,13 +68,13 @@ module.exports = {
     },
     certifications: {
       title: 'Certifications',
+      aws_developer_associate: {
+        dates: 'AVRIL 2024',
+      },
+      terraform_associate: {
+        dates: 'JUIN 2024',
+      },
     },
-  },
-  projects: {
-    title: 'Projets',
-    subtitle: "Quelques projets sur lesquels j'ai travaillé dernièrement.",
-    search: 'Rechercher dans les projet',
-    noResults: 'Aucun projet trouvé.',
   },
   nav_links: {
     home: 'accueil',
