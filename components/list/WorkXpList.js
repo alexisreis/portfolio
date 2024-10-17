@@ -9,7 +9,7 @@ const WorkXpList = () => {
   const workxpList = workxp(i18n);
 
   return (
-    <div className="content mt-4 sm:mt-12">
+    <div className="content mt-4 sm:mt-8">
       <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">
         {i18n.t('home.workxp.title')}
       </h2>

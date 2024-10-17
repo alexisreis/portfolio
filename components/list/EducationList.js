@@ -1,17 +1,17 @@
 import { useI18n } from 'next-localization';
 import List from '@/components/list/List';
 
-import { education } from '@/data/education';
+import { formation } from '@/data/formation';
 
 const EducationList = () => {
   const i18n = useI18n();
 
-  const educationList = education(i18n);
+  const educationList = formation(i18n);
 
   return (
-    <div className="content mt-8 sm:mt-12">
+    <div className="content mt-8 sm:mt-8">
       <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">
-        {i18n.t('home.education.title')}
+        {i18n.t('home.formation.title')}
       </h2>
       <List items={educationList} />
     </div>
