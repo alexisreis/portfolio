@@ -16,13 +16,15 @@ const Card = ({ title, date, description, imgSrc, href }) => {
       locale={currentLocale}
       className="flex flex-row md:flex-col transition duration-300 ease-in-out hover:scale-105 w-full md:w-[48%] border-2 border-gray-200 border-opacity-60 dark:border-gray-700 overflow-hidden rounded-md"
     >
-      <Image
-        alt={title}
-        src={imgSrc}
-        className="object-cover md:w-full w-1/2"
-        width={500}
-        height={300}
-      />
+      <div className="hidden md:block md:w-full sm:h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
+        <Image
+          alt={title}
+          src={imgSrc}
+          className="object-contain w-full h-full"
+          width={500}
+          height={300}
+        />
+      </div>
       <div className="p-6 bg-white dark:bg-background-color-dark">
         <h2 className="text-2xl font-bold leading-8 tracking-tight">{title}</h2>
         <p className="mb-3 inline-block flex-none translate-y-px rounded bg-zinc-200 p-1 text-xs font-semibold leading-none text-zinc-700 dark:bg-zinc-800 dark:text-zinc-400">
