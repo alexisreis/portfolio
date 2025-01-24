@@ -26,7 +26,7 @@ module.exports = {
       },
       colors: {
         'background-color': '#fdfdfd',
-        'background-color-dark': '#1b1b1e',
+        'background-color-dark': '#100f0f',
         'primary-color': '#f30e14',
         'primary-color-dark': '#ec6d05',
         primary: colors.red,

@@ -1,19 +1,18 @@
-import SectionContainer from './SectionContainer';
 import Footer from './Footer';
-
-import { useI18n } from 'next-localization';
-import { useRouter } from 'next/router';
-import Navbar from '@/components/Navbar';
+import Navbar from './Navbar';
+import SectionContainer from './SectionContainer';
 
 const LayoutWrapper = ({ children }) => {
   return (
-    <SectionContainer>
-      <div className="flex h-auto flex-col justify-between">
-        <Navbar />
-        <main className="mb-auto">{children}</main>
-        <Footer />
-      </div>
-    </SectionContainer>
+    <>
+      <Navbar />
+      <SectionContainer>
+        <div className="">
+          <main className="mb-auto">{children}</main>
+        </div>
+      </SectionContainer>
+      <Footer />
+    </>
   );
 };
 
