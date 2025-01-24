@@ -11,6 +11,14 @@ const Navbar = () => {
   const i18n = useI18n();
   const router = useRouter();
 
+  const isLinkActive = (href) => {
+    if (href === '/') {
+      return router.pathname === '/';
+    }
+
+    return router.pathname.startsWith(href);
+  };
+
   return (
     <header className="flex items-center justify-between my-4 py-4 pr-4 bg-background-color dark:bg-background-color-dark transition duration-300 ease-in-out sticky top-0 z-10">
       <div>
@@ -28,7 +36,7 @@ const Navbar = () => {
             <Link
               key={link.title}
               href={link.href}
-              className={`p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4 ${router.pathname === link.href ? 'text-primary-500 border-b-4 border-primary-500' : ''}`}
+              className={`p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4 ${isLinkActive(link.href) ? 'text-primary-500 border-b-4 border-primary-500' : ''}`}
             >
               {i18n.t(`nav_links.${link.title}`)}
             </Link>

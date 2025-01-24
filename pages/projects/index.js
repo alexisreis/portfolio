@@ -7,6 +7,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 import siteMetadata from '@/data/siteMetadata';
 import projectsData from '@/data/projectsData';
+import SearchBar from '@/components/SearchBar';
 
 export const POSTS_PER_PAGE = 6;
 
@@ -21,7 +22,7 @@ export async function getStaticProps() {
   return { props: { initialDisplayPosts, posts, pagination } };
 }
 
-export default function Projects() {
+export default function Index() {
   const i18n = useI18n();
 
   const [searchValue, setSearchValue] = useState('');
@@ -45,26 +46,10 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="relative block">
-          <span className="absolute inset-y-0 left-0 flex items-center pl-2 text-gray-600 dark:text-white">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="h-8 w-8"
-            >
-              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </span>
-          <input
-            aria-label={i18n.t('projects.search')}
-            type="text"
-            onChange={(e) => setSearchValue(e.target.value)}
-            placeholder={i18n.t('projects.search')}
-            className="block w-full py-2 pl-12 pr-3 focus:border-primary-500 text-gray-600 focus:ring-primary-500 rounded-md sm:text-sm border-gray-300 dark:border-gray-900 dark:bg-gray-800 dark:text-white focus:outline-none"
-          />
-        </div>
+        <SearchBar
+          placeholder={i18n.t('projects.search')}
+          onChange={(e) => setSearchValue(e.target.value)}
+        />
 
         <div className="container py-4">
           <div className="flex flex-wrap flex-col md:flex-row gap-4 md:justify-between">
