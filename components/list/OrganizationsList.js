@@ -2,6 +2,7 @@ import { useI18n } from 'next-localization';
 import List from '@/components/list/List';
 
 import { societies } from '@/data/societies';
+import Divider from '@/components/Divider';
 
 const OrganizationsList = () => {
   const i18n = useI18n();
@@ -14,6 +15,7 @@ const OrganizationsList = () => {
         {i18n.t('home.societies.title')}
       </h2>
       <List items={organizationsList} />
+      <Divider />
     </div>
   );
 };

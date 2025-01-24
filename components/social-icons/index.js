@@ -15,9 +15,9 @@ const SocialIcon = ({
   href,
   size = 8,
   color = 'text-gray-700',
-  hoverColor = 'text-blue-500',
+  hoverColor = 'text-primary-500',
   darkColor = 'text-gray-200',
-  darkHoverColor = 'text-blue-400',
+  darkHoverColor = 'text-primary-500',
 }) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null;

@@ -2,6 +2,7 @@ import { useI18n } from 'next-localization';
 import List from '@/components/list/List';
 
 import { formation } from '@/data/formation';
+import Divider from '@/components/Divider';
 
 const EducationList = () => {
   const i18n = useI18n();
@@ -14,6 +15,7 @@ const EducationList = () => {
         {i18n.t('home.formation.title')}
       </h2>
       <List items={educationList} />
+      <Divider />
     </div>
   );
 };

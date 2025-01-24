@@ -59,7 +59,7 @@ const LanguageSwitcher = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-40 rounded-md shadow-lg border border-gray-900 bg-white dark:bg-background-color dark:border-gray-200">
+        <div className="z-10 absolute right-0 mt-2 w-40 rounded-md shadow-lg border border-gray-900 bg-white dark:bg-background-color dark:border-gray-200">
           <div role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             {locales.map((locale) => (
               <Link

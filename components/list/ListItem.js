@@ -1,6 +1,6 @@
-import Image from '@/components/Image';
-import Link from '@/components/Link';
 import { useI18n } from 'next-localization';
+import { StrokeButton } from '@/components/Buttons';
+import Image from '@/components/Image';
 
 const ListItem = ({ title, img, dates, description, href, type }) => {
   const i18n = useI18n();
@@ -21,12 +21,7 @@ const ListItem = ({ title, img, dates, description, href, type }) => {
         <p className="flex-1 text-zinc-500 dark:text-zinc-400">{description}</p>
       </div>
       {type === 'certifications' && (
-        <Link
-          className="flex ml-auto my-auto border border-blue-600 px-4 py-2 rounded-xl text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-blue-700 dark:hover:border-primary-400 text-center"
-          href={href}
-        >
-          {i18n.t('components.listItem.viewBadge')}
-        </Link>
+        <StrokeButton text={i18n.t('components.listItem.viewBadge')} href={href} />
       )}
     </li>
   );

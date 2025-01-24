@@ -26,10 +26,9 @@ module.exports = {
       },
       colors: {
         'background-color': '#1F2023',
-        'primary-color': '#1e90ff',
-        'primary-color-dark': '#1e90ff',
-        'spotify-green': '#1DB954',
-        primary: colors.blue,
+        'primary-color': '#f30e14',
+        'primary-color-dark': '#ec6d05',
+        primary: colors.red,
         gray: colors.neutral,
       },
       typography: (theme) => ({
@@ -105,7 +104,7 @@ module.exports = {
           css: {
             color: theme('colors.slate.200'), //text color for dark mode
             a: {
-              color: theme('colors.primary-color-dark'), // links in dark mode
+              color: theme('colors.primary-color'), // links in dark mode
               '&:hover': {
                 color: theme('colors.primary.400'),
               },
