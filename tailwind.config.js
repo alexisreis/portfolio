@@ -25,7 +25,8 @@ module.exports = {
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        'background-color': '#1F2023',
+        'background-color': '#fdfdfd',
+        'background-color-dark': '#1b1b1e',
         'primary-color': '#f30e14',
         'primary-color-dark': '#ec6d05',
         primary: colors.red,

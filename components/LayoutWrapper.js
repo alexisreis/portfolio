@@ -8,7 +8,7 @@ import Navbar from '@/components/Navbar';
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
-      <div className="flex h-screen flex-col justify-between">
+      <div className="flex h-auto flex-col justify-between">
         <Navbar />
         <main className="mb-auto">{children}</main>
         <Footer />
