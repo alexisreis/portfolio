@@ -36,7 +36,7 @@ export default function Index() {
   return (
     <>
       <PageSEO title={`Projects - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <div className="">
+      <div>
         <div className="space-y-2 pt-6 pb-4 md:space-y-5">
           <h1 className="mb-1 text-3xl font-bold tracking-tight text-zinc-800 dark:text-white md:text-5xl">
             {i18n.t('projects.title')}
@@ -53,17 +53,18 @@ export default function Index() {
 
         <div className="container py-4">
           <div className="flex flex-wrap flex-col md:flex-row gap-4 md:justify-between">
-            {!filteredBlogPosts.length && i18n.t('projects.noResults')}
-            {displayPosts.map((d) => (
-              <Card
-                key={d.title}
-                title={d.title}
-                date={d.date}
-                description={d.description}
-                imgSrc={d.imgSrc}
-                href={d.href}
-              />
-            ))}
+            {!filteredBlogPosts.length
+              ? i18n.t('projects.noResults')
+              : displayPosts.map((d) => (
+                  <Card
+                    key={d.title}
+                    title={d.title}
+                    date={d.date}
+                    description={d.description}
+                    imgSrc={d.imgSrc}
+                    href={d.href}
+                  />
+                ))}
           </div>
         </div>
       </div>
