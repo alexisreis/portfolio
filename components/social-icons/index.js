@@ -1,4 +1,4 @@
-import Mail from './mail.svg';
+import Mail from '../../assets/mail.svg';
 import Github from './github.svg';
 import Linkedin from './linkedin.svg';
 
