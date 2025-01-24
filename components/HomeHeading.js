@@ -1,5 +1,4 @@
 import { useI18n } from 'next-localization';
-import CurrentlyWorkingAt from '@/components/CurrentlyWorkingAt';
 import Image from '@/components/Image';
 import SocialIconsList from '@/components/social-icons/SocialIconsList';
 
@@ -7,7 +6,7 @@ const HomeHeading = () => {
   const i18n = useI18n();
 
   return (
-    <div className="space-y-2 md:space-y-5">
+    <div className="space-y-2 md:space-y-5 mb-4">
       <div className="mr-auto flex flex-row items-center">
         <div className="w-[100px] sm:mb-0 sm:w-[180px]">
           <Image
@@ -19,14 +18,17 @@ const HomeHeading = () => {
           />
         </div>
 
-        <div className="flex flex-1 flex-col pl-8">
-          <h1 className="mb-1 text-3xl font-bold tracking-tight text-zinc-800 dark:text-white md:text-5xl">
+        <div className="flex flex-1 flex-col pl-8 gap-2">
+          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-white md:text-5xl">
             Alexis Reis
           </h1>
-          <h2 className="mb-4 text-xl font-bold tracking-tight text-primary-600 md:text-xl">
+          <h2 className="text-xl font-bold tracking-tight text-primary-600 md:text-xl">
             {i18n.t('home.status')}
           </h2>
-          <CurrentlyWorkingAt isMobileOnly={false} />
+          <SocialIconsList />
+
+          {/*<CurrentlyWorkingAt isMobileOnly={false} />*/}
+
           {/*            <Link
               href="mailto:alexisreis@outlook.fr"
               aria-label="Contact me!"
@@ -38,7 +40,7 @@ const HomeHeading = () => {
             </Link>*/}
         </div>
       </div>
-      <CurrentlyWorkingAt isMobileOnly={true} />
+      {/*<CurrentlyWorkingAt isMobileOnly={true} />*/}
       {/*       <Link
           href="mailto:alexisreis@outlook.fr"
           aria-label="Contact me!"
@@ -48,8 +50,6 @@ const HomeHeading = () => {
           {i18n.t('home.looking_for')}
           <strong> {i18n.t('home.looking_for_what')} </strong>
         </Link>*/}
-
-      <SocialIconsList />
     </div>
   );
 };

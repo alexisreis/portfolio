@@ -50,8 +50,8 @@ const PresentationTiles = () => {
   const tiles = presentationTiles(i18n);
 
   return (
-    <div className="flex justify-center">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-6xl px-4">
+    <div className="flex justify-between">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-6xl">
         {tiles.map((tile) => (
           <Tile key={tile.title} title={tile.title} image={tile.image} text={tile.text} />
         ))}
