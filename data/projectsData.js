@@ -5,7 +5,7 @@ const projectsData = [
     description: `Internship at Worldline Labs, Villeurbanne, France.`,
     tags: ['React', 'Node.js', 'Docker', 'web', 'fullstack'],
     imgSrc: '/static/images/projects/resapp-1.png',
-    href: '/blog/2023-08-Resapp',
+    href: '/projects/2023-08-Resapp',
   },
   {
     title: 'SmartMeals 🍽️',
@@ -13,7 +13,7 @@ const projectsData = [
     description: `Final year project at INSA Lyon, with 6 other students.`,
     tags: ['ReactNative', 'Python', 'mobile', 'fullstack'],
     imgSrc: '/static/images/projects/smartmeals-1.png',
-    href: '/blog/2023-04-SmartMeals',
+    href: '/projects/2023-04-SmartMeals',
   },
   {
     title: "Aperit'IF 🍹",
@@ -21,7 +21,7 @@ const projectsData = [
     description: `School project using semantic web technologies.`,
     tags: ['React', 'Node.js', 'web', 'fullstack'],
     imgSrc: '/static/images/projects/Aperitif.png',
-    href: '/blog/2023-01-AperitIF',
+    href: '/projects/2023-01-AperitIF',
   },
   {
     title: 'annotation-app 📝',
@@ -29,7 +29,7 @@ const projectsData = [
     description: `Internship at Liris. Research project on annotation softwares.`,
     tags: ['React', 'Node.js', 'web', 'fullstack'],
     imgSrc: '/static/images/projects/annotation-app.jpg',
-    href: '/blog/2022-08-annotation-app',
+    href: '/projects/2022-08-annotation-app',
   },
   {
     title: 'cooloc',
@@ -37,7 +37,7 @@ const projectsData = [
     description: 'Expenses management app for roommates.',
     tags: ['React', 'Node.js', 'web', 'fullstack'],
     imgSrc: '/static/images/projects/cooloc-1.jpg',
-    href: '/blog/2021-12-cooloc',
+    href: '/projects/2021-12-cooloc',
   },
   {
     title: 'Automatic car prototype',
@@ -45,7 +45,7 @@ const projectsData = [
     description: 'School project to build an automatic car prototype with sensors and Arduinos.',
     tags: ['School Projects', 'Arduino', 'C++', 'Java', 'MySQL'],
     imgSrc: '/static/images/projects/p2i-1.jpg',
-    href: '/blog/2021-06-p2i',
+    href: '/projects/2021-06-p2i',
   },
   {
     title: 'Chess board game in Java',
@@ -53,7 +53,7 @@ const projectsData = [
     description: 'School project to develop a chess board game using Java.',
     tags: ['School Projects', 'Java', 'Game'],
     imgSrc: '/static/images/projects/chess.jpg',
-    href: '/blog/2021-04-chess',
+    href: '/projects/2021-04-chess',
   },
   {
     title: 'Intelligent door',
@@ -63,7 +63,7 @@ const projectsData = [
       ' our knowledge in electronics and programming.',
     tags: ['School Projects', 'Arduino'],
     imgSrc: '/static/images/projects/KPI.jpg',
-    href: '/blog/2019-05-KPI',
+    href: '/projects/2019-05-KPI',
   },
 ];
 
