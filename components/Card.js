@@ -23,7 +23,7 @@ const Card = ({ title, date, description, imgSrc, href }) => {
         width={500}
         height={300}
       />
-      <div className="p-6 bg-white dark:bg-background-color">
+      <div className="p-6 bg-white dark:bg-background-color-dark">
         <h2 className="text-2xl font-bold leading-8 tracking-tight">{title}</h2>
         <p className="mb-3 inline-block flex-none translate-y-px rounded bg-zinc-200 p-1 text-xs font-semibold leading-none text-zinc-700 dark:bg-zinc-800 dark:text-zinc-400">
           {date}

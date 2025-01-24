@@ -12,7 +12,7 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <header className="flex items-center justify-between my-4 py-4 pr-4">
+    <header className="flex items-center justify-between my-4 py-4 pr-4 bg-background-color dark:bg-background-color-dark transition duration-300 ease-in-out sticky top-0 z-10">
       <div>
         <Link href="/">
           <div className="flex items-center justify-between">

@@ -1,11 +1,10 @@
 module.exports = {
   home: {
     currently_working_at: {
-      title: 'Currently working as a',
-      job: 'Fullstack developer & DevOps',
+      title: 'Currently working',
       company: 'at Onepoint, Paris',
     },
-    status: 'Computer Science engineer',
+    status: 'Fullstack developer & DevOps',
     looking_for: '\uD83D\uDD0E Looking for a',
     looking_for_what: '6 months internship !',
     contact_me: 'Contact me!',
