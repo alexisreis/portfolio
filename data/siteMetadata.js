@@ -2,8 +2,7 @@ const siteMetadata = {
   title: 'Alexis Reis - final year student in Computer Science',
   author: 'Alexis Reis',
   headerTitle: 'Alexis Reis',
-  description:
-    'Portfolio of a final year student in Computer Science from INSA Lyon, France. I am currently looking for a 6-month internship',
+  description: 'Portfolio of a final year student in Computer Science from INSA Lyon, France.',
   language: 'en-GB',
   theme: 'system',
   siteUrl: 'https://portfolio-alexisreis.vercel.app',

@@ -2,6 +2,7 @@ import { useI18n } from 'next-localization';
 import List from '@/components/list/List';
 
 import { workxp } from '@/data/workxp';
+import Divider from '@/components/Divider';
 
 const WorkXpList = () => {
   const i18n = useI18n();
@@ -14,6 +15,7 @@ const WorkXpList = () => {
         {i18n.t('home.workxp.title')}
       </h2>
       <List items={workxpList} />
+      <Divider />
     </div>
   );
 };

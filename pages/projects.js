@@ -67,7 +67,7 @@ export default function Projects() {
         </div>
 
         <div className="container py-4">
-          <div className="-m-4 flex flex-wrap">
+          <div className="flex flex-wrap flex-col md:flex-row gap-4 md:justify-between">
             {!filteredBlogPosts.length && i18n.t('projects.noResults')}
             {displayPosts.map((d) => (
               <Card

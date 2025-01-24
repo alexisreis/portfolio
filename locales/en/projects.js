@@ -1,7 +1,7 @@
 // Projects - en
 module.exports = {
-  title: 'Projects',
+  title: 'Experiences and projects',
   subtitle: 'Some projects I worked on lately.',
-  search: 'Search projects',
+  search: 'Search in all projects',
   noResults: 'No projects found.',
 };
