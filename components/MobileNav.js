@@ -52,12 +52,6 @@ const MobileNav = () => {
           navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <button
-          type="button"
-          aria-label="toggle modal"
-          className="fixed h-full w-full cursor-auto focus:outline-none"
-          onClick={onToggleNav}
-        ></button>
         <nav className="fixed mt-8 h-full">
           {headerNavLinks.map((link) => (
             <div key={link.title} className="px-12 py-4">
