@@ -24,27 +24,27 @@ const socialsList = (i18n) => [
   },
 ];
 
-const SocialIcon = ({ href, icon }) => {
+const SocialIcon = ({ href, icon, iconSize = 'w-8 h-8' }) => {
   return (
     <a
       href={href}
       rel="noreferrer"
       target="_blank"
-      className="text-gray-600 hover:text-primary-500 transition-colors duration-300 dark:text-gray-200 dark:hover:text-primary-400"
+      className="text-zinc-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-600 transition-colors duration-300"
     >
-      <div className="w-8 h-8">{icon}</div>
+      <div className={iconSize}>{icon}</div>
     </a>
   );
 };
 
-const SocialIconsList = () => {
+const SocialIconsList = ({ iconSize }) => {
   const i18n = useI18n();
   const socials = socialsList(i18n);
 
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-4">
       {socials.map((social) => (
-        <SocialIcon key={social.href} href={social.href} icon={social.icon} />
+        <SocialIcon key={social.href} href={social.href} icon={social.icon} iconSize={iconSize} />
       ))}
     </div>
   );

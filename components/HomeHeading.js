@@ -1,14 +1,14 @@
 import { useI18n } from 'next-localization';
 import Image from '@/components/Image';
-import SocialIconsList from '@/components/social-icons/SocialIconsList';
+import SocialIconsList from '@/components/list/SocialIconsList';
 
 const HomeHeading = () => {
   const i18n = useI18n();
 
   return (
     <div className="space-y-2 md:space-y-5 mb-4">
-      <div className="mr-auto flex flex-row items-center">
-        <div className="w-[100px] sm:mb-0 sm:w-[180px]">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-12">
+        <div className="w-[150px] sm:w-[180px]">
           <Image
             src="/static/images/profile.jpg"
             alt="avatar"
@@ -18,11 +18,11 @@ const HomeHeading = () => {
           />
         </div>
 
-        <div className="flex flex-1 flex-col pl-8 gap-2">
-          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-white md:text-5xl">
+        <div className="flex flex-col gap-2 items-center">
+          <h1 className="font-bold tracking-tight text-zinc-800 dark:text-white text-5xl text-center">
             Alexis Reis
           </h1>
-          <h2 className="text-xl font-bold tracking-tight text-primary-600 md:text-xl">
+          <h2 className="text-xl font-bold tracking-tight text-primary-600 md:text-xl text-center">
             {i18n.t('home.status')}
           </h2>
           <SocialIconsList />

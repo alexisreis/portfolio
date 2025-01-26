@@ -1,6 +1,6 @@
-import SocialIcon from '@/components/social-icons';
 import Image from '@/components/Image';
 import { PageSEO } from '@/components/SEO';
+import SocialIconsList from '@/components/list/SocialIconsList';
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, occupation, company, email, linkedin, github } = frontMatter;
@@ -8,7 +8,7 @@ export default function AuthorLayout({ children, frontMatter }) {
   return (
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
-      <div className="">
+      <div>
         <div className="space-y-2 pt-6 pb-4 md:space-y-5">
           <h1 className="mb-1 text-3xl font-bold tracking-tight text-zinc-800 dark:text-white md:text-5xl">
             About
@@ -27,11 +27,7 @@ export default function AuthorLayout({ children, frontMatter }) {
 
               <h3 className="py-2 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
 
-              <div className="flex space-x-3 py-6 px-4 md:py-0 md:px-6">
-                <SocialIcon kind="mail" href={`mailto:${email}`} size={5} />
-                <SocialIcon kind="github" href={github} size={5} />
-                <SocialIcon kind="linkedin" href={linkedin} size={5} />
-              </div>
+              <SocialIconsList iconSize="w-5 h-5" />
             </div>
 
             <div className="px-8">
