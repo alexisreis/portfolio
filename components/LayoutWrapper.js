@@ -7,9 +7,7 @@ const LayoutWrapper = ({ children }) => {
     <>
       <Navbar />
       <SectionContainer>
-        <div className="">
-          <main className="mb-auto">{children}</main>
-        </div>
+        <main className="mb-auto">{children}</main>
       </SectionContainer>
       <Footer />
     </>
