@@ -30,7 +30,7 @@ const SocialIcon = ({ href, icon, iconSize = 'w-8 h-8' }) => {
       href={href}
       rel="noreferrer"
       target="_blank"
-      className="text-zinc-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-600 transition-colors duration-300"
+      className="text-zinc-800 transition-colors duration-300 hover:text-primary-600 dark:text-white dark:hover:text-primary-600"
     >
       <div className={iconSize}>{icon}</div>
     </a>

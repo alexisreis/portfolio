@@ -12,7 +12,7 @@ const ProjectsList = () => {
 
   return (
     <div className="content mt-8 sm:mt-8">
-      <div className="flex flex-row justify-between items-center mb-4">
+      <div className="mb-4 flex flex-row items-center justify-between">
         <div>
           <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">
             {i18n.t('projects.title')}
@@ -24,7 +24,7 @@ const ProjectsList = () => {
         <StrokeButton text={i18n.t('home.see_all_projects')} href={'/projects'}></StrokeButton>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-4 md:justify-between mb-8">
+      <div className="mb-8 flex flex-col gap-4 md:flex-row md:justify-between">
         {projectsData.slice(0, MAX_DISPLAY).map((d) => (
           <Card
             key={d.title}

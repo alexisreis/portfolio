@@ -6,8 +6,8 @@ const HomeHeading = () => {
   const i18n = useI18n();
 
   return (
-    <div className="space-y-2 md:space-y-5 mb-4">
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-12">
+    <div className="mb-4 space-y-2 md:space-y-5">
+      <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-12">
         <div className="w-[150px] sm:w-[180px]">
           <Image
             src="/static/images/profile.jpg"
@@ -18,11 +18,11 @@ const HomeHeading = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-2 items-center">
-          <h1 className="font-bold tracking-tight text-zinc-800 dark:text-white text-5xl text-center">
+        <div className="flex flex-col items-center gap-2">
+          <h1 className="text-center text-5xl font-bold tracking-tight text-zinc-800 dark:text-white">
             Alexis Reis
           </h1>
-          <h2 className="text-xl font-bold tracking-tight text-primary-600 md:text-xl text-center">
+          <h2 className="text-center text-xl font-bold tracking-tight text-primary-600 md:text-xl">
             {i18n.t('home.status')}
           </h2>
           <SocialIconsList />

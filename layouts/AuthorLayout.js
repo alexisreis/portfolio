@@ -9,13 +9,13 @@ export default function AuthorLayout({ children, frontMatter }) {
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
       <div>
-        <div className="space-y-2 pt-6 pb-4 md:space-y-5">
+        <div className="space-y-2 pb-4 pt-6 md:space-y-5">
           <h1 className="mb-1 text-3xl font-bold tracking-tight text-zinc-800 dark:text-white md:text-5xl">
             About
           </h1>
         </div>
         <div className="items-start">
-          <div className="dark:bg-slate-100 flex flex-col items-center rounded-lg bg-slate-700 bg-opacity-10 p-2 text-center md:flex-row">
+          <div className="flex flex-col items-center rounded-lg bg-slate-700 bg-opacity-10 p-2 text-center dark:bg-slate-100 md:flex-row">
             <div>
               <Image
                 src="/static/images/profile.jpg"
@@ -38,7 +38,7 @@ export default function AuthorLayout({ children, frontMatter }) {
         </div>
         <div className="space-y-4 text-zinc-500 dark:text-slate-300">
           <div className="my-4 leading-loose">
-            <div className="prose max-w-none pt-8 pb-8 text-zinc-500 dark:prose-dark xl:col-span-2">
+            <div className="prose max-w-none pb-8 pt-8 text-zinc-500 dark:prose-dark xl:col-span-2">
               {children}
             </div>
           </div>

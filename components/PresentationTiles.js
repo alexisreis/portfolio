@@ -26,17 +26,17 @@ const presentationTiles = (i18n) => [
 
 const Tile = ({ title, image, text }) => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 transition duration-300 ease-in-out hover:scale-105 w-full">
+    <div className="flex w-full flex-col items-center justify-center p-4 transition duration-300 ease-in-out hover:scale-105">
       <span className="block text-center text-xl font-bold text-zinc-800 dark:text-white">
         {title}
       </span>
-      <div className="w-[80px] h-auto">
+      <div className="h-auto w-[80px]">
         <Image
           src={image}
           alt={title}
           width={80}
           height={80}
-          className="h-full w-full object-contain dark:invert my-2"
+          className="my-2 h-full w-full object-contain dark:invert"
         />
       </div>
       <span className="block text-center text-sm text-zinc-800 dark:text-white">{text}</span>
@@ -51,7 +51,7 @@ const PresentationTiles = () => {
 
   return (
     <div className="flex justify-between">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-6xl">
+      <div className="grid w-full max-w-6xl grid-cols-2 gap-4 md:grid-cols-4">
         {tiles.map((tile, index) => (
           <Tile key={index} title={tile.title} image={tile.image} text={tile.text} />
         ))}

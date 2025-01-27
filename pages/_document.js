@@ -2,7 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en" className="antialiased scroll-smooth scroll-pt-20">
+      <Html lang="en" className="scroll-pt-20 scroll-smooth antialiased">
         <Head>
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
           <link
@@ -23,7 +23,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#000000" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         </Head>
-        <body className="bg-background-color text-black antialiased dark:bg-background-color-dark dark:text-white transition duration-300 ease-in-out">
+        <body className="bg-background-color text-black antialiased transition duration-300 ease-in-out dark:bg-background-color-dark dark:text-white">
           <Main />
           <NextScript />
         </body>

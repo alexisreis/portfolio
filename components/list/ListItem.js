@@ -11,7 +11,7 @@ const ListItem = ({ title, img, dates, description, href, type }) => {
   return (
     <li className="my-4 flex items-start gap-4">
       <Link href={href}>
-        <div className="flex flex-col items-center justify-center h-14 w-14 p-2 rounded-md bg-gray-200 dark:bg-gray-700">
+        <div className="flex h-14 w-14 flex-col items-center justify-center rounded-md bg-gray-200 p-2 dark:bg-gray-700">
           <Image src={img} alt={title} width={56} height={56} className="rounded-md" />
         </div>
       </Link>

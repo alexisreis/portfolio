@@ -12,7 +12,7 @@ const PostAuthorCard = ({ authorDetails, date, readingTime }) => {
           width={24}
           height={24}
           alt={author.name}
-          className="h-10 w-10 rounded-full mr-1"
+          className="mr-1 h-10 w-10 rounded-full"
         />
       )}
       <div>

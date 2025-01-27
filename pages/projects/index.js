@@ -37,7 +37,7 @@ export default function Index() {
     <>
       <PageSEO title={`Projects - ${siteMetadata.author}`} description={siteMetadata.description} />
       <div>
-        <div className="space-y-2 pt-6 pb-4 md:space-y-5">
+        <div className="space-y-2 pb-4 pt-6 md:space-y-5">
           <h1 className="mb-1 text-3xl font-bold tracking-tight text-zinc-800 dark:text-white md:text-5xl">
             {i18n.t('projects.title')}
           </h1>
@@ -52,7 +52,7 @@ export default function Index() {
         />
 
         <div className="container py-4">
-          <div className="flex flex-wrap flex-col md:flex-row gap-4 md:justify-between">
+          <div className="flex flex-col flex-wrap gap-4 md:flex-row md:justify-between">
             {!filteredBlogPosts.length
               ? i18n.t('projects.noResults')
               : displayPosts.map((d) => (

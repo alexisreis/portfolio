@@ -6,11 +6,11 @@ const CurrentlyWorkingAt = ({ isMobileOnly }) => {
 
   return (
     <div
-      className={`border border-gray-500 rounded-2xl p-4 ${isMobileOnly ? 'block sm:hidden' : 'hidden sm:block'} dark:text-white dark:border-gray-600`}
+      className={`rounded-2xl border border-gray-500 p-4 ${isMobileOnly ? 'block sm:hidden' : 'hidden sm:block'} dark:border-gray-600 dark:text-white`}
     >
-      <h3 className="font-bold text-xl mb-2">{i18n.t('home.currently_working_at.title')}</h3>
-      <div className="flex gap-4 items-center">
-        <div className="h-12 w-12 flex justify-center items-center rounded-lg bg-gray-200 dark:bg-gray-700">
+      <h3 className="mb-2 text-xl font-bold">{i18n.t('home.currently_working_at.title')}</h3>
+      <div className="flex items-center gap-4">
+        <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gray-200 dark:bg-gray-700">
           <Image
             src={'/static/images/workxp/onepoint.svg'}
             width={50}
