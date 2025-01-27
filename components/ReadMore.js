@@ -14,7 +14,7 @@ const ReadMore = ({ children }) => {
       </div>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="text-primary-500 hover:text-primary-600 font-medium focus:outline-none"
+        className="font-medium text-primary-500 hover:text-primary-600 focus:outline-none"
       >
         {isOpen ? 'Show less' : 'Read more about it'}
       </button>

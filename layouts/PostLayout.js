@@ -21,15 +21,15 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 width={1440}
                 height={720}
                 alt="Cover image"
-                className="w-full h-64 object-cover backdrop-filter backdrop-blur-sm"
+                className="h-64 w-full object-cover backdrop-blur-sm backdrop-filter"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white dark:to-gray-900"></div>
               <PageTitle className="absolute bottom-0 left-0 right-0">{title}</PageTitle>
             </div>
             <PostAuthorCard authorDetails={authorDetails} date={date} readingTime={readingTime} />
           </header>
-          <div className="pb-8 " style={{ gridTemplateRows: 'auto 1fr' }}>
-            <div className=" xl:col-span-3 xl:row-span-2 xl:pb-0">
+          <div className="pb-8" style={{ gridTemplateRows: 'auto 1fr' }}>
+            <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pb-4 dark:prose-dark">{children}</div>
             </div>
             <footer>
