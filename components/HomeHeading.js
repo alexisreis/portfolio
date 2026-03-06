@@ -1,6 +1,7 @@
 import { useI18n } from 'next-localization';
 import Image from '@/components/Image';
 import SocialIconsList from '@/components/list/SocialIconsList';
+import ProfilePic from '@/components/ProfilePic';
 
 const HomeHeading = () => {
   const i18n = useI18n();
@@ -8,16 +9,7 @@ const HomeHeading = () => {
   return (
     <div className="mb-4 space-y-2 md:space-y-5">
       <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-12">
-        <div className="w-[150px] sm:w-[180px]">
-          <Image
-            src="/static/images/profile.jpg"
-            alt="avatar"
-            width={200}
-            height={200}
-            className="rounded-full shadow-xl shadow-gray-700"
-          />
-        </div>
-
+        <ProfilePic />
         <div className="flex flex-col items-center gap-2">
           <h1 className="text-center text-5xl font-bold tracking-tight text-zinc-800 dark:text-white">
             Alexis Reis
