@@ -21,12 +21,12 @@ const ListItem = ({ title, img, dates, description, href, type }) => {
           <DateSubtitle date={dates} />
         </div>
         <p className="flex-1 text-zinc-500 dark:text-zinc-400">{description}</p>
-        <ReadMore>
+        {/* <ReadMore>
           <p>
             Hello my name is John and I'm really trying to code this thinig right threr but not sure
             if it's gonna work to be honnest
           </p>
-        </ReadMore>
+        </ReadMore> */}
       </div>
       {type === 'certifications' && (
         <StrokeButton text={i18n.t('components.listItem.viewBadge')} href={href} />
