@@ -67,6 +67,9 @@ module.exports = {
     },
     certifications: {
       title: 'Certifications',
+      aws_devops_engineer_professional: {
+        dates: 'FEVRIER 2025',
+      },
       aws_developer_associate: {
         dates: 'AVRIL 2024',
       },
