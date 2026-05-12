@@ -28,7 +28,7 @@ module.exports = {
         'background-color': '#fdfdfd',
         'background-color-dark': '#100f0f',
         'primary-color': '#f30e14',
-        primary: colors.red,
+        primary: colors.orange,
         gray: colors.neutral,
       },
       typography: (theme) => ({
