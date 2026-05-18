@@ -84,4 +84,39 @@ module.exports = {
     projects: 'projects',
     about: 'about',
   },
+  projects_data: {
+    resapp: {
+      title: 'Resapp 📆',
+      description: 'Internship at Worldline Labs, Villeurbanne, France.',
+    },
+    smart_meals: {
+      title: 'SmartMeals 🍽️',
+      description: 'Final year project at INSA Lyon, with 6 other students.',
+    },
+    aperitif: {
+      title: "Aperit'IF 🍹",
+      description: 'School project using semantic web technologies.',
+    },
+    annotation_app: {
+      title: 'annotation-app 📝',
+      description: 'Internship at Liris. Research project on annotation software.',
+    },
+    cooloc: {
+      title: 'cooloc',
+      description: 'Expenses management app for roommates.',
+    },
+    p2i: {
+      title: 'Automatic car prototype',
+      description: 'School project to build an automatic car prototype with sensors and Arduinos.',
+    },
+    chess: {
+      title: 'Chess board game in Java',
+      description: 'School project to develop a chess board game using Java.',
+    },
+    kpi: {
+      title: 'Intelligent door',
+      description:
+        'Final high school project to build a smart door using all our knowledge in electronics and programming.',
+    },
+  },
 };
