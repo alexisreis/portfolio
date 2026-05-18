@@ -28,7 +28,7 @@ const ListItem = ({ title, img, dates, description, href, type }) => {
           </p>
         </ReadMore> */}
       </div>
-      {type === 'certifications' && (
+      {type === 'certifications' && href && (
         <StrokeButton text={i18n.t('components.listItem.viewBadge')} href={href} />
       )}
     </li>

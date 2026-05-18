@@ -73,6 +73,9 @@ module.exports = {
       aws_developer_associate: {
         dates: 'AVRIL 2024',
       },
+      github_copilot: {
+        dates: 'DECEMBRE 2025',
+      },
       terraform_associate: {
         dates: 'JUIN 2024',
       },
