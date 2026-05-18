@@ -26,14 +26,7 @@ const ProjectsList = () => {
 
       <div className="mb-8 flex flex-col gap-4 md:flex-row md:justify-between">
         {projectsData.slice(0, MAX_DISPLAY).map((d) => (
-          <Card
-            key={d.title}
-            title={d.title}
-            date={d.date}
-            description={d.description}
-            imgSrc={d.imgSrc}
-            href={d.href}
-          />
+          <Card key={d.i18nKey} i18nKey={d.i18nKey} date={d.date} imgSrc={d.imgSrc} href={d.href} />
         ))}
       </div>
       <Divider />

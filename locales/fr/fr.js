@@ -4,7 +4,7 @@ module.exports = {
       title: 'Actuellement, je travaille',
       company: 'à Onepoint, Paris',
     },
-    status: 'Développeur fullstack et DevOps',
+    status: 'Développeur fullstack IA et DevOps',
     looking_for: '\uD83D\uDD0E Je recherche',
     looking_for_what: 'un stage de 6 mois !',
     contact_me: 'Me contacter !',
@@ -85,5 +85,41 @@ module.exports = {
     home: 'accueil',
     projects: 'projets',
     about: 'moi',
+  },
+  projects_data: {
+    resapp: {
+      title: 'Resapp 📆',
+      description: 'Stage chez Worldline Labs, Villeurbanne, France.',
+    },
+    smart_meals: {
+      title: 'SmartMeals 🍽️',
+      description: "Projet de fin d'études à l'INSA Lyon, avec 6 autres étudiants.",
+    },
+    aperitif: {
+      title: "Aperit'IF 🍹",
+      description: 'Projet scolaire utilisant les technologies du web sémantique.',
+    },
+    annotation_app: {
+      title: 'annotation-app 📝',
+      description: "Stage au LIRIS. Projet de recherche sur les logiciels d'annotation.",
+    },
+    cooloc: {
+      title: 'cooloc',
+      description: 'Application de gestion des dépenses pour colocataires.',
+    },
+    p2i: {
+      title: 'Prototype de voiture automatique',
+      description:
+        'Projet scolaire pour construire un prototype de voiture automatique avec des capteurs et des Arduinos.',
+    },
+    chess: {
+      title: "Jeu d'échecs en Java",
+      description: "Projet scolaire pour développer un jeu d'échecs en Java.",
+    },
+    kpi: {
+      title: 'Porte intelligente',
+      description:
+        'Projet de terminale pour construire une porte intelligente en utilisant nos connaissances en électronique et en programmation.',
+    },
   },
 };
