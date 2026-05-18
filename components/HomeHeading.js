@@ -9,7 +9,6 @@ const HomeHeading = () => {
   return (
     <div className="mb-4 space-y-2 md:space-y-5">
       <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-12">
-        <ProfilePic />
         <div className="flex flex-col items-center gap-2">
           <h1 className="text-center text-5xl font-bold tracking-tight text-zinc-800 dark:text-white">
             Alexis Reis
@@ -31,6 +30,7 @@ const HomeHeading = () => {
               <strong> {i18n.t('home.looking_for_what')} </strong>
             </Link>*/}
         </div>
+        <ProfilePic />
       </div>
       {/*<CurrentlyWorkingAt isMobileOnly={true} />*/}
       {/*       <Link
