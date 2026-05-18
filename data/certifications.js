@@ -23,4 +23,11 @@ export const certifications = (i18n) => [
     description: 'HCTA0-003',
     href: 'https://www.credly.com/badges/4e1c433d-2014-4f52-aa4e-0c719b43575c',
   },
+  {
+    type: 'certifications',
+    title: 'Github Copilot',
+    img: '/static/images/certifications/github-copilot.png',
+    dates: i18n.t('home.certifications.github_copilot.dates'),
+    description: 'GCP-01',
+  },
 ];
