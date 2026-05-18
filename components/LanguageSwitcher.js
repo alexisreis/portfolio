@@ -47,10 +47,10 @@ const LanguageSwitcher = () => {
     <div className="relative inline-block text-left" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="flex h-8 w-8 flex-row items-center justify-center rounded-md p-1 text-xl hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800"
+        className="flex h-8 w-8 flex-row items-center justify-center p-1 text-xl hover:bg-gray-100 dark:hover:bg-gray-800"
       >
         <Image
-          className="rounded-xl border-2 border-gray-900 dark:border-gray-200"
+          className="rounded-xl"
           src={flags[currentLocale]}
           alt={languages[currentLocale]}
           width={24}
@@ -59,18 +59,18 @@ const LanguageSwitcher = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 z-10 mt-2 w-40 rounded-md border border-gray-900 bg-white shadow-lg dark:border-gray-200 dark:bg-background-color-dark">
+        <div className="absolute right-0 z-10 mt-2 w-40 bg-white shadow-md dark:bg-background-color-dark">
           <div role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             {locales.map((locale) => (
               <Link
                 key={locale}
-                className="flex flex-1 rounded-md px-2 py-2 text-base text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-100"
+                className="flex flex-1 px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-100"
                 href={router.asPath}
                 locale={locale}
                 onClick={closeMenu}
               >
                 <Image
-                  className="mr-2 rounded-xl border-2 border-gray-900 dark:border-gray-200"
+                  className="mr-2 rounded-xl"
                   src={flags[locale]}
                   alt={languages[locale]}
                   width={24}
