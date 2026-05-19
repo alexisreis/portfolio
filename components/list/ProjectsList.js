@@ -12,7 +12,7 @@ const ProjectsList = () => {
 
   return (
     <div className="content mt-8 sm:mt-8">
-      <div className="mb-4 flex flex-row items-center justify-between">
+      <div className="flex-start mb-4 flex flex-col justify-between sm:flex-row sm:items-center">
         <div>
           <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">
             {i18n.t('projects.title')}

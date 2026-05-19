@@ -47,7 +47,7 @@ const LanguageSwitcher = () => {
     <div className="relative inline-block text-left" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="flex h-8 w-8 flex-row items-center justify-center p-1 text-xl hover:bg-gray-100 dark:hover:bg-gray-800"
+        className="flex h-8 w-8 flex-row items-center justify-center rounded-md p-1 text-xl hover:bg-gray-200 dark:hover:bg-gray-800"
       >
         <Image
           className="rounded-xl"
