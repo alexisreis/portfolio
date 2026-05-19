@@ -27,7 +27,13 @@ export default function Index() {
 
   const [searchValue, setSearchValue] = useState('');
   const filteredBlogPosts = projectsData.filter((frontMatter) => {
-    const searchContent = frontMatter.title + frontMatter.description + frontMatter.tags.join(' ');
+    const title = frontMatter.i18nKey
+      ? i18n.t(`projects_data.${frontMatter.i18nKey}.title`)
+      : (frontMatter.title ?? '');
+    const description = frontMatter.i18nKey
+      ? i18n.t(`projects_data.${frontMatter.i18nKey}.description`)
+      : (frontMatter.description ?? '');
+    const searchContent = title + description + frontMatter.tags.join(' ');
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
 
@@ -57,10 +63,9 @@ export default function Index() {
               ? i18n.t('projects.noResults')
               : displayPosts.map((d) => (
                   <Card
-                    key={d.title}
-                    title={d.title}
+                    key={d.i18nKey}
+                    i18nKey={d.i18nKey}
                     date={d.date}
-                    description={d.description}
                     imgSrc={d.imgSrc}
                     href={d.href}
                   />

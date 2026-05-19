@@ -9,11 +9,10 @@ import PresentationTiles from '@/components/PresentationTiles';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import siteMetadata from '@/data/siteMetadata';
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog');
-  const { default: lngDict = {} } = await import(`../locales/${locale}`);
 
-  return { props: { posts, lngDict } };
+  return { props: { posts } };
 }
 
 export default function Home() {
