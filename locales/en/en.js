@@ -85,6 +85,10 @@ module.exports = {
     about: 'about',
   },
   projects_data: {
+    smartfish: {
+      title: 'Smartfish 🐟',
+      description: 'Mobile game development.',
+    },
     resapp: {
       title: 'Resapp 📆',
       description: 'Internship at Worldline Labs, Villeurbanne, France.',

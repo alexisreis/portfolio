@@ -87,6 +87,10 @@ module.exports = {
     about: 'moi',
   },
   projects_data: {
+    smartfish: {
+      title: 'Smartfish 🐟',
+      description: 'Développement d’un jeu mobile.',
+    },
     resapp: {
       title: 'Resapp 📆',
       description: 'Stage chez Worldline Labs, Villeurbanne, France.',
