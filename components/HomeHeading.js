@@ -8,7 +8,7 @@ const HomeHeading = () => {
 
   return (
     <div className="mb-4 space-y-2 md:space-y-5">
-      <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-12">
+      <div className="flex flex-col-reverse items-center justify-center gap-4 sm:flex-row sm:gap-12">
         <div className="flex flex-col items-center gap-2">
           <h1 className="text-center text-5xl font-bold tracking-tight text-zinc-800 dark:text-white">
             Alexis Reis
