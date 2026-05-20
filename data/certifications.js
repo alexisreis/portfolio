@@ -29,5 +29,6 @@ export const certifications = (i18n) => [
     img: '/static/images/certifications/github-copilot.png',
     dates: i18n.t('home.certifications.github_copilot.dates'),
     description: 'GCP-01',
+    href: 'https://learn.microsoft.com/api/credentials/share/en-us/AlexisReis-8745/2286BE840712757C?sharingId=C4D66AB23BFD83B4',
   },
 ];
