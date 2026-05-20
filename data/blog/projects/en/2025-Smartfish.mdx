@@ -1,0 +1,130 @@
+---
+title: Smartfish, a mobile game to improve my general knowledge
+date: '2026-05-01'
+tags: ['react native', 'mobile', 'agents', 'ai']
+draft: false
+images: ['/static/images/projects/Smartfish/banner.png']
+summary: Full creation of a mobile general knowledge quiz game
+---
+
+I have always been drawn to mobile app development, but a lack of time and concrete opportunities had so far kept me from getting started. The idea for **Smartfish** came from a simple observation: general knowledge quiz games already exist, but few offer a modern, customizable, and engaging mobile experience. By combining my interests in **development, artificial intelligence, and general knowledge**, I wanted to build a project that would let me have fun while learning, and share that experience with my friends.
+
+## Context and inspiration
+
+Smartfish is a general knowledge quiz game designed to challenge players across **multiple categories** (history, geography, sports, music, cinema, etc.). The goal was to develop an application that feels **smooth, modern, and visually appealing**, with an iconic mascot to strengthen the product identity.
+
+The inspiration came from existing games, but also from the expression _"goldfish memory"_, which naturally led to the choice of a fish as the mascot. This customizable and interactive character sits at the heart of the user experience.
+
+<Image
+  alt="Smartfish home screen"
+  src="/static/images/projects/smartfish/homepage.png"
+  width={1125}
+  height={2436}
+  style={{ width: '100%', maxWidth: '300px', height: 'auto', margin: '0 auto', display: 'block' }}
+/>
+
+---
+
+## Key features
+
+To make the app **engaging and addictive**, I included several mechanics:
+
+- **Varied quizzes**: Questions across many categories, generated and validated through a multi-agent workflow (see below).
+- **Custom flashcards**: Players can save and review the questions that interest them most.
+- **Complete onboarding**: A smooth flow that guides new users toward signing up.
+- **Streak system**: An incentive to play every day, represented by water drops that purify the fish’s pond. The fish’s mood changes based on answers and consistency.
+- **Fish customization**: Costumes and accessories to strengthen players’ attachment to the character.
+- **Progression and rewards**: Levels, leaderboards, and customizable notifications to keep engagement high.
+- **Multiplayer mode**: Players can create groups with friends and compete on the same questions every day, with a visible leaderboard.
+
+<div style={{ display: 'flex', gap: '16px', maxWidth: '100%' }}>
+  <div style={{ flex: 1, minWidth: 0 }}>
+    <Image
+      alt="Quiz - question screen"
+      src="/static/images/projects/smartfish/qcm-1.jpg"
+      width={1125}
+      height={2317}
+      style={{ width: '100%', height: 'auto' }}
+    />
+  </div>
+  <div style={{ flex: 1, minWidth: 0 }}>
+    <Image
+      alt="Quiz - answer result"
+      src="/static/images/projects/smartfish/qcm-2.jpg"
+      width={1125}
+      height={2302}
+      style={{ width: '100%', height: 'auto' }}
+    />
+  </div>
+</div>
+
+<div style={{ display: 'flex', gap: '16px', maxWidth: '100%', marginTop: '16px' }}>
+  <div style={{ flex: 1, minWidth: 0 }}>
+    <Image
+      alt="Flashcards list"
+      src="/static/images/projects/smartfish/flashcards-list.png"
+      width={1125}
+      height={2436}
+      style={{ width: '100%', height: 'auto' }}
+    />
+  </div>
+  <div style={{ flex: 1, minWidth: 0 }}>
+    <Image
+      alt="Flashcard review"
+      src="/static/images/projects/smartfish/flashcards-study.jpg"
+      width={1125}
+      height={2322}
+      style={{ width: '100%', height: 'auto' }}
+    />
+  </div>
+</div>
+
+---
+
+## Design and visual identity
+
+Smartfish’s design was built progressively, inspired by the mobile games I enjoy. The focus was placed on:
+
+- A **strong visual identity**, with the fish as the central element.
+- **Fish customization**, with costumes and accessories shown throughout the app to create an emotional connection with players.
+  <div style={{ display: 'flex', gap: '16px', maxWidth: '100%' }}>
+    <div style={{ flex: 1, minWidth: 0 }}>
+      <Image
+        alt="Fish customization"
+        src="/static/images/projects/smartfish/customize-fish.png"
+        width={1125}
+        height={2436}
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </div>
+    <div style={{ flex: 1, minWidth: 0 }}>
+      <Image
+        alt="Multiplayer mode - group leaderboard"
+        src="/static/images/projects/smartfish/group.jpg"
+        width={1125}
+        height={2311}
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </div>
+  </div>
+
+---
+
+## Question generation
+
+To ensure the **quality and diversity** of the questions, I built a **multi-agent workflow** based on LangGraph:
+
+- **An upstream workflow**: Breaks down a broad topic into subtopics or key facts to ensure exhaustive coverage.
+- **An author**: Generates questions from a given topic.
+- **A validator**: Validates the quality of generated questions (LLM-as-a-Judge based on another model to avoid self-confirmation bias).
+- **Enrichment agents**: Improve formatting, difficulty, and relevance.
+
+This approach makes it possible to **generate varied, accurate, and difficulty-appropriate questions**.
+
+The questions are generated in advance and stored in a database to guarantee a smooth and fast experience for players, while also keeping LLM usage costs under control.
+
+---
+
+## Current status and outlook
+
+Today, **Smartfish is fully functional** and currently in internal testing with a group of 25 people. Their regular feedback helps me continuously improve the application. The release on the **App Store and Google Play** is planned for the coming months.

@@ -1,5 +1,12 @@
 const projectsData = [
   {
+    i18nKey: 'smartfish',
+    date: '2025 - NOW',
+    tags: ['react native', 'mobile', 'agents', 'ia'],
+    imgSrc: '/static/images/projects/smartfish/banner.png',
+    href: '/projects/2025-Smartfish',
+  },
+  {
     i18nKey: 'resapp',
     date: 'MAY - AUG 2023',
     tags: ['React', 'Node.js', 'Docker', 'web', 'fullstack'],

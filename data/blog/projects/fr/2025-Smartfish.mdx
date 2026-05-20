@@ -1,0 +1,130 @@
+---
+title: Smartfish, un jeu mobile pour améliorer ma culture générale
+date: '2026-05-01'
+tags: ['react native', 'mobile', 'agents', 'ia']
+draft: false
+images: ['/static/images/projects/Smartfish/banner.png']
+summary: Création complète d'un jeu mobile de quiz de culture générale
+---
+
+J’ai toujours été attiré par le développement d’applications mobiles, mais le manque de temps et d’opportunités concrètes m’avait jusqu’alors empêché de me lancer. L’idée de **Smartfish** est née d’un constat simple : les jeux de quiz de culture générale existent, mais peu offrent une expérience moderne, personnalisable et engageante sur mobile. En combinant mes centres d’intérêt — **développement, intelligence artificielle et culture générale** — j’ai voulu créer un projet qui me permettrait de m’amuser tout en apprenant, et de partager cette expérience avec mes amis.
+
+## Contexte et inspiration
+
+Smartfish est un jeu de quiz de culture générale conçu pour proposer aux joueurs des défis dans **plusieurs catégories** (histoire, géographie, sport, musique, cinéma, etc.). L’objectif était de développer une application **fluide, moderne et visuellement attrayante**, avec une mascotte iconique pour renforcer l’identité du jeu.
+
+L’inspiration est venue de jeux existants, mais aussi de l’expression _« mémoire de poisson rouge »_, qui a naturellement conduit au choix du poisson comme mascotte. Ce personnage, personnalisable et interactif, est au cœur de l’expérience utilisateur.
+
+<Image
+  alt="Page d'accueil de Smartfish"
+  src="/static/images/projects/smartfish/homepage.png"
+  width={1125}
+  height={2436}
+  style={{ width: '100%', maxWidth: '300px', height: 'auto', margin: '0 auto', display: 'block' }}
+/>
+
+---
+
+## Fonctionnalités clés
+
+Pour rendre l’application **engageante et addictive**, j’ai intégré plusieurs mécanismes :
+
+- **Quiz variés** : Des questions dans de multiples catégories, générées et validées via un workflow multi-agents (voir plus bas).
+- **Cartes mémoires personnalisables** : Les joueurs peuvent sauvegarder et réviser les questions qui les intéressent.
+- **Onboarding complet** : Une intégration fluide pour guider les nouveaux utilisateurs vers l’inscription.
+- **Système de série (streak)** : Incitation à jouer quotidiennement, représentée par des gouttes d’eau qui purifient le bassin du poisson. L’humeur du poisson évolue en fonction des réponses et de la régularité de jeu.
+- **Personnalisation du poisson** : Costumes et accessoires pour renforcer l’attachement des joueurs.
+- **Progression et récompenses** : Niveaux, classements et notifications personnalisables pour maintenir l’engagement.
+- **Mode multijoueur** : Création de groupes entre amis pour jouer en compétition sur les mêmes questions chaque jour, avec un classement affiché.
+
+<div style={{ display: 'flex', gap: '16px', maxWidth: '100%' }}>
+  <div style={{ flex: 1, minWidth: 0 }}>
+    <Image
+      alt="Quiz - écran de question"
+      src="/static/images/projects/smartfish/qcm-1.jpg"
+      width={1125}
+      height={2317}
+      style={{ width: '100%', height: 'auto' }}
+    />
+  </div>
+  <div style={{ flex: 1, minWidth: 0 }}>
+    <Image
+      alt="Quiz - résultat de réponse"
+      src="/static/images/projects/smartfish/qcm-2.jpg"
+      width={1125}
+      height={2302}
+      style={{ width: '100%', height: 'auto' }}
+    />
+  </div>
+</div>
+
+<div style={{ display: 'flex', gap: '16px', maxWidth: '100%', marginTop: '16px' }}>
+  <div style={{ flex: 1, minWidth: 0 }}>
+    <Image
+      alt="Liste des flashcards"
+      src="/static/images/projects/smartfish/flashcards-list.png"
+      width={1125}
+      height={2436}
+      style={{ width: '100%', height: 'auto' }}
+    />
+  </div>
+  <div style={{ flex: 1, minWidth: 0 }}>
+    <Image
+      alt="Révision d'une flashcard"
+      src="/static/images/projects/smartfish/flashcards-study.jpg"
+      width={1125}
+      height={2322}
+      style={{ width: '100%', height: 'auto' }}
+    />
+  </div>
+</div>
+
+---
+
+## Design et identité visuelle
+
+Le design de Smartfish s’est construit progressivement, en s’inspirant des jeux mobiles que j’apprécie. L’accent a été mis sur :
+
+- Une **identité visuelle forte**, avec le poisson comme élément central.
+- La **personnalisation** du poisson, dont les costumes et accessoires sont affichés dans toute l’application, pour créer un lien émotionnel avec les joueurs.
+  <div style={{ display: 'flex', gap: '16px', maxWidth: '100%' }}>
+    <div style={{ flex: 1, minWidth: 0 }}>
+      <Image
+        alt="Personnalisation du poisson"
+        src="/static/images/projects/smartfish/customize-fish.png"
+        width={1125}
+        height={2436}
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </div>
+    <div style={{ flex: 1, minWidth: 0 }}>
+      <Image
+        alt="Mode multijoueur - classement de groupe"
+        src="/static/images/projects/smartfish/group.jpg"
+        width={1125}
+        height={2311}
+        style={{ width: '100%', height: 'auto' }}
+      />
+    </div>
+  </div>
+
+---
+
+## La génération de questions
+
+Pour garantir la **qualité et la diversité** des questions, j’ai mis en place un **workflow multi-agents** basé sur LangGraph :
+
+- **Un workflow amont** : Décompose un thème global en sous-thèmes ou faits marquants, pour une couverture exhaustive.
+- **Un auteur** : Génère les questions à partir d’un thème donné.
+- **Un validateur** : Valide la qualité des questions générées (LLM as a Judge basé sur un autre modèle pour éviter les biais d'auto-confirmation).
+- **Des agents d’enrichissement** : Améliorent le format, la difficulté et la pertinence des questions.
+
+Cette approche permet de **générer des questions variées, précises et adaptées** à différents niveaux de difficulté.
+
+Les questions sont générés à l’avance et stockées dans une base de données, pour garantir une expérience fluide et rapide pour les joueurs (et aussi limiter les coûts liés à l’utilisation de LLMs).
+
+---
+
+## État actuel et perspectives
+
+Aujourd’hui, **Smartfish est totalement fonctionnel** et en phase de test interne avec un groupe de 25 personnes, dont les retours réguliers me permettent d’améliorer l’application. La sortie sur les **stores (AppStore et Android)** est prévue dans les prochains mois.
